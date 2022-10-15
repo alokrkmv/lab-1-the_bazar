@@ -1,0 +1,7 @@
+{
+    "default_config": {
+      "number_of_peers": 6,
+      "items":["fish","salt","board"],
+      "ROLES" : ["buyer","seller"]
+    }
+}
