@@ -7,6 +7,7 @@ import random
 import Pyro5.api
 
 from peers import Peer
+from create_bazar import create_bazar
 # This is the main process which takes command line argument
 # It is responsible for spwaning peers as buyers or sellers
 
@@ -16,7 +17,6 @@ def main():
     default_configs = data["default_config"]
     # If number of peers is passed through command line then use that as number of peer
     # otherwise pick default number of peers from config file
-    print(sys.argv)
     if len(sys.argv)==3:
         number_of_peers = int(sys.argv[2])
     else:
@@ -50,5 +50,8 @@ def main():
 
 if __name__=='__main__':
     peers = main()
+    peer_id_list = []
     for peer in peers:
-        print(peer)
+        peer_id_list.append(peer.id)
+    create_bazar(peer_id_list)
+    
