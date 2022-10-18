@@ -5,6 +5,10 @@ echo "Installing all the requirements for the project"
 pip3 install -r  requirements.txt
 echo "Starting nameserver in detached mode"
 python3 start_nameserver.py "$@"
+echo "Removing dead peers from the server"
+pyro5-nsc removematching ^seller
+echo "Removing dead peers from the server"
+pyro5-nsc removematching ^buyer
 echo "Starting the main process"
 python3 main.py "$@"
 
