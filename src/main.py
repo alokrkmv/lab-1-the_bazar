@@ -3,6 +3,8 @@ from logging import exception
 import os
 import sys
 import random
+import sys
+import time
 
 import Pyro5.api
 
@@ -17,6 +19,10 @@ def main():
     default_configs = data["default_config"]
     # If number of peers is passed through command line then use that as number of peer
     # otherwise pick default number of peers from config file
+    try:
+        hostname = sys.argv[1]
+    except Exception as e:
+        print("Host name not provided please provide a hostname while executing the run command")
     if len(sys.argv)==3:
         number_of_peers = int(sys.argv[2])
     else:
@@ -25,11 +31,6 @@ def main():
     items = default_configs["items"]
     items_count = default_configs["number_of_items"]
     peers = []
-    # Locate the nameserver currently running on the system
-    try:
-        nameserver = Pyro5.api.locate_ns()
-    except exception as e:
-        print(f"Locating nameserver failed with exception {e}")
     # Make sure that there is at least one buyer and one seller in the network
     ids = {}
     for i,r in enumerate(roles):
@@ -41,7 +42,7 @@ def main():
         id = f"{role}{str(i)}"
         ids[id] = role
     for id,role in ids.items():
-        peer = Peer(id,role,nameserver,items,items_count)
+        peer = Peer(id,role,items,items_count,hostname)
         peers.append(peer)
     return peers
 
@@ -54,4 +55,9 @@ if __name__=='__main__':
     for peer in peers:
         peer_id_list.append(peer.id)
     create_bazar(peer_id_list)
+    try: 
+        for peer in peers:
+            peer.start()
+    except KeyboardInterrupt:
+        sys.exit()
     

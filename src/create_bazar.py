@@ -44,3 +44,13 @@ def create_bazar(peer_list):
     json_object = json.dumps(adj_list)
     with open("bazaar.json", "w") as outfile:
         outfile.write(json_object)
+
+# This function sets hope count for the bazar
+def get_hope_count():
+    pass
+    # try:
+    #     f = open("bazaar.json")
+    # except Exception as e:
+    #     print(f"Something went wrong while reading bazar.json file!!! Make sure that the peer to peer network has been constructed")
+    # data = json.load(f)
+
