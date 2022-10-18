@@ -16,6 +16,7 @@ class Peer(Thread):
         self.max_items = items_count
         self.item = items[random.randint(0, len(items) - 1)]
         self.neighbours = []
+        self.sellers = []
 
     def __str__(self):
         return f'id : {self.id},role : {self.role},nameserver: {self.name_server},items: {self.items})'
@@ -44,23 +45,26 @@ class Peer(Thread):
 
         if self.role == "seller" and product_name == self.item:
             # If seller found and selling the item call reply
-            self.reply()
+            self.reply(self.id, search_path)
         else:
             # Else do something
             # find neighbours 
             neighbours = self.get_neighbours(self.id)
 
             # if the serach_path is not empty, take the previous peer from which the request was received
-            if search_path: previous_peer = search_path[-1]
+            if search_path: 
+                previous_peer = search_path[-1]
+            else:
+                previous_peer = None
             
             # For each neighbour
             for each_neighbour in neighbours:
                 # create a deep copy of the search path
                 new_search_path = search_path[:]
-                if each_neighbour == previous_peer:
+                if previous_peer and each_neighbour == previous_peer:  # for search path empty
                     continue
                 ######### lookup function of the next peer with peer id each_neighbour ###############
-                lookup(buyerID, product_name, hop_count, new_search_path.append(each_neighbour))
+                lookup(buyerID, product_name, hop_count, new_search_path.append(self.id))
 
         return 
 
@@ -68,8 +72,16 @@ class Peer(Thread):
         # Returns the neighbours of the current peer
         pass
 
-    def reply(self):
-        pass
+    def reply(self, seller_id: str, reply_path: [str]):
+        # 
+        if reply_path:
+            previous_peer = reply_path.pop()
+            # call the reply of previous_peer
+            reply(seller_id, reply_path)
+
+        else: # empty reply_path means, you reply has reached the buyer, add the seller_id to the list
+            # this line appends the seller ids of all the peers from which the buyr got a reply
+            self.sellers.append(seller_id)
 
 
     def buy(self):
