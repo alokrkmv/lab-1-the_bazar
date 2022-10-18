@@ -2,7 +2,7 @@ from threading import Thread, Lock
 import random
 
 class Peer(Thread):
-    def __init__(self,id,role,name_server,items, items_count):
+    def __init__(self, id, role, name_server, items, items_count):
 
         # To inherit the thread class it is necessary to inherit the init and 
         # run method of the thread class
@@ -22,15 +22,27 @@ class Peer(Thread):
 
     def lookup(self, buyerID: str, product_name: str, hop_count: int, search_path: [str]):
         """
-        Args:
-        Return:
+        Parameters
+        ----------
+        buyerID: str
+            id of the buyer that sent the request
+        product_name: str
+            product demanded by the buyer
+        hop_count: int
+            number of hops remaining after the previous hop
+        search_path: [str]
+            list of ids of the peers via which the request arrived
+
+        Return
+        ------
+        Null
         """
         if hop_count < 1:
             return
         else:
             hop_count -= 1
 
-        if self.role == "Seller" and product_name == self.item:
+        if self.role == "seller" and product_name == self.item:
             # If seller found and selling the item call reply
             self.reply()
         else:
@@ -60,7 +72,7 @@ class Peer(Thread):
         pass
 
 
-    def buy(self, ):
+    def buy(self):
         if self.items_count > 0:
             self.items_count -= 1
             return True
