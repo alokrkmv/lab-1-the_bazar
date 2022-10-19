@@ -58,7 +58,7 @@ def create_bazar(peer_list):
 
 # This function sets hope count for the bazar
 def get_hop_count():
-    # pass
+    pass
     # try:
     #     f = open("bazaar.json")
     # except Exception as e:
