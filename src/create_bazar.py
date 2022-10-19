@@ -5,11 +5,21 @@ import json
 
 # Creating the connected peer to peer network. The final connected adjacency list is stored in bazaar.json
 
-def generate_graph(node, vertices):
+def generate_graph(node, edges):
+    """"
+    Args
+    ----
+    node: total number of peers
+    edges: maximum number of edge sin the graph
+    
+    Return
+    ------
+    generated graph
+    """
     while True:
         d = defaultdict(list)
         # Generate
-        G = nx.gnm_random_graph(node,vertices)
+        G = nx.gnm_random_graph(node,edges)
         edges = G.edges
         # Making sure that the graph is connected
         if not nx.is_connected(G):
@@ -26,6 +36,7 @@ def generate_graph(node, vertices):
         if is_found:
             continue
         return G
+
 def create_bazar(peer_list):
     G = generate_graph(len(peer_list),len(peer_list)+2)
     edges = G.edges
@@ -46,8 +57,8 @@ def create_bazar(peer_list):
         outfile.write(json_object)
 
 # This function sets hope count for the bazar
-def get_hope_count():
-    pass
+def get_hop_count():
+    # pass
     # try:
     #     f = open("bazaar.json")
     # except Exception as e:
