@@ -6,9 +6,9 @@ pip3 install -r  requirements.txt
 echo "Starting nameserver in detached mode"
 python3 start_nameserver.py "$@"
 echo "Removing dead peers from the server"
-pyro4-nsc removematching ^seller
+echo y | pyro4-nsc removematching ^seller
 echo "Removing dead peers from the server"
-pyro4-nsc removematching ^buyer
+echo y | pyro4-nsc removematching ^buyer
 echo "Starting the main process"
 python3 main.py "$@"
 

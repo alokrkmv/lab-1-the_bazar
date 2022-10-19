@@ -21,7 +21,7 @@ class Peer(Thread):
         self.item = items[random.randint(0, len(items) - 1)]
         self.executor = ThreadPoolExecutor(max_workers=5)
         self.host  = host
-        self.hop_count = 4
+        self.hop_count = None
         self.neighbors = {}
         self.lock_item = Lock()
         self.lock_sellers = Lock()
@@ -31,7 +31,7 @@ class Peer(Thread):
         
 
     def __str__(self):
-        return f'id : {self.id},role : {self.role},nameserver: {self.name_server},items: {self.items})'
+        return f'id : {self.id},role : {self.role},nameserver: {self.name_server},items: {self.items}, "hop_count":{self.hop_count})'
 
     @Pyro4.expose
     def ping(self):
@@ -58,6 +58,7 @@ class Peer(Thread):
             
     # Inheriting the run method of thread class
     def run(self):
+        print(self.hop_count)
         try:
             # Registering the peer as Pyro5 object
             with Pyro4.Daemon(host = self.host) as daemon:
@@ -89,8 +90,8 @@ class Peer(Thread):
                         
                         neighbor_proxy = Pyro4.Proxy(uri)
                         print(f"Buyer {self.id} issues lookup to {neighbor} at time {time.time()}")
-                        id_list = [self.id]
-                        lookups.append(self.executor.submit(neighbor_proxy.lookup,self.item,self.hop_count,id_list))
+                       
+                        lookups.append(self.executor.submit(neighbor_proxy.lookup,self.item,self.hop_count,[self.id]))
                     for lookup_request in lookups:
                         lookup_request.result()
                     
@@ -120,22 +121,25 @@ class Peer(Thread):
     @Pyro4.expose
     def buy(self, buyer_id):
         # with self.lock_item:
-        if self.items_count > 0:
-            self.items_count -= 1
-            print(f"{buyer_id} purchase item {self.item} from seller {self.id} at {time.time()}")
-            print(f"Seller {self.id} now has {self.items_count} remaining for item {self.item}")
-            return True
-        else:
-            while True:
-                picked_item = self.items[random.randint(0, len(self.item) - 1)]
-                if self.item!=picked_item:
-                    self.item = picked_item
-                    break
-                    
-                self.items_count = self.max_items
-                print("Seller id {} is now the seller of {}.".format(self.id, self.item))
-                self.output_array.append(f"Seller {self.id} is now the seller of {self.item}.")
-                return False
+        try:
+            if self.items_count > 0:
+                self.items_count -= 1
+                print(f"{buyer_id} purchase item {self.item} from  {self.id} at {time.time()}")
+                print(f"{self.id} now has {self.items_count} remaining for item {self.item}")
+                return True
+            else:
+                while True:
+                    picked_item = self.items[random.randint(0, len(self.item) - 1)]
+                    if self.item!=picked_item:
+                        self.item = picked_item
+                        break
+                        
+                    self.items_count = self.max_items
+                    print("{} is now the seller of {}.".format(self.id, self.item))
+                    self.output_array.append(f"Seller {self.id} is now the seller of {self.item}.")
+                    return False
+        except Exception as e:
+            print(f"Something went wrong in buy with error {e}")
 
     # This  method is the lookup method which transmits the call to its neighbours
     # until a suitable seller for the item is found
