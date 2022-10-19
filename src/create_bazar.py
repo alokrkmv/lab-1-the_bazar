@@ -34,6 +34,7 @@ def create_bazar(peer_list):
         pos_dict[i] = peer
     nx.draw_networkx(G,labels = pos_dict,with_labels=True,node_color="red")
     print("Showing the graphical representation of the bazaar")
+    # Start the plt.show as a seperate thread so that application can proceed to run
     plt.show(block=False)
     plt.pause(5)
     adj_list = defaultdict(list)
