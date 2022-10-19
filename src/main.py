@@ -4,10 +4,6 @@ import os
 import sys
 import random
 import sys
-import time
-
-import Pyro5.api
-
 from peers import Peer
 from create_bazar import create_bazar
 # This is the main process which takes command line argument

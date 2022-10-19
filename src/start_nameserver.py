@@ -1,4 +1,5 @@
-import Pyro5.api
+import Pyro4.naming
+import Pyro4
 import sys
 from multiprocessing import Process
 
@@ -29,7 +30,7 @@ def detachify(func):
 
 @detachify
 def detached_nameserver(host):
-        Pyro5.nameserver.start_ns_loop(host=host)
+        Pyro4.naming.startNSloop(host=host)
 
 def start_nameserver():
     arguments = sys.argv
@@ -41,7 +42,7 @@ def start_nameserver():
 
     try:
         # Check if the nameserver is already running
-        Pyro5.api.locate_ns(host=host)
+        Pyro4.locateNS(host=host)
         print(f"Namespace server is already running on {host}")
     except Exception as e:
         print("No nameserver found!!! Starting a new server on the host machine")
