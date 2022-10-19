@@ -4,830 +4,1060 @@ Requirement already satisfied: Pyro5==5.14 in /home/alokrkmv/Documents/my_code/l
 Requirement already satisfied: networkx==2.8.7 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from -r requirements.txt (line 2)) (2.8.7)
 Requirement already satisfied: matplotlib==3.6.1 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from -r requirements.txt (line 3)) (3.6.1)
 Requirement already satisfied: serpent>=1.41 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from Pyro5==5.14->-r requirements.txt (line 1)) (1.41)
-Requirement already satisfied: numpy>=1.19 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (1.23.4)
 Requirement already satisfied: cycler>=0.10 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (0.11.0)
+Requirement already satisfied: pyparsing>=2.2.1 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (3.0.9)
+Requirement already satisfied: numpy>=1.19 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (1.23.4)
 Requirement already satisfied: contourpy>=1.0.1 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (1.0.5)
+Requirement already satisfied: pillow>=6.2.0 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (9.2.0)
+Requirement already satisfied: python-dateutil>=2.7 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (2.8.2)
 Requirement already satisfied: kiwisolver>=1.0.1 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (1.4.4)
 Requirement already satisfied: packaging>=20.0 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (21.3)
 Requirement already satisfied: fonttools>=4.22.0 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (4.37.4)
-Requirement already satisfied: pyparsing>=2.2.1 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (3.0.9)
-Requirement already satisfied: python-dateutil>=2.7 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (2.8.2)
-Requirement already satisfied: pillow>=6.2.0 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (9.2.0)
 Requirement already satisfied: six>=1.5 in /home/alokrkmv/Documents/my_code/lab-1-the_bazar/the_bazar_env/lib/python3.8/site-packages (from python-dateutil>=2.7->matplotlib==3.6.1->-r requirements.txt (line 3)) (1.16.0)
 Starting nameserver in detached mode
-Namespace server is already running on localhost
+No nameserver found!!! Starting a new server on the host machine
 Removing dead peers from the server
-Potentially removing lots of items from the Name server. Are you sure (y/n)?6 items removed.
+Potentially removing lots of items from the Name server. Are you sure (y/n)?0 items removed.
 Removing dead peers from the server
-Potentially removing lots of items from the Name server. Are you sure (y/n)?4 items removed.
+Potentially removing lots of items from the Name server. Are you sure (y/n)?0 items removed.
 Starting the main process
 Showing the graphical representation of the bazaar
-seller1 joined the bazar as seller selling salt at 1666182308.2972956
-buyer7 joined the bazar as buyer looking for boar at 1666182308.2990088
-buyer2 joined the bazar as buyer looking for fish at 1666182308.29955
-seller4 joined the bazar as seller selling boar at 1666182308.300416
-seller3 joined the bazar as seller selling salt at 1666182308.3028579
-seller6 joined the bazar as seller selling salt at 1666182308.3036776
-buyer0 joined the bazar as buyer looking for boar at 1666182308.3040361
-seller5 joined the bazar as seller selling boar at 1666182308.3048263
-seller8 joined the bazar as seller selling fish at 1666182308.305676
-seller9 joined the bazar as seller selling salt at 1666182308.306055
-Buyer buyer7 issues lookup to buyer0 at time 1666182310.3196201
-Buyer buyer2 issues lookup to buyer0 at time 1666182310.3241432
-Buyer buyer7 issues lookup to seller1 at time 1666182310.3250039
-Buyer buyer0 issues lookup to buyer2 at time 1666182310.325515
-Something went wrong in lookup with exception dictionary changed size during iteration
-Buyer buyer7 issues lookup to seller4 at time 1666182310.329126
-Buyer buyer2 issues lookup to seller6 at time 1666182310.3306406
-Buyer buyer0 issues lookup to seller5 at time 1666182310.332215
-Buyer buyer2 issues lookup to seller3 at time 1666182310.33611
-Buyer buyer0 issues lookup to buyer7 at time 1666182310.3427336
-1666182310.3619804 buyer0 got a match reply from seller5
-1666182310.3961105 buyer7 got a match reply from seller4
-1666182310.4044113 buyer7 picked seller4 to purchase boar
-Buyer buyer2 now picked item fish to buy at time 1666182310.4047441
-1666182310.4187727 buyer0 picked seller5 to purchase boar
-1666182310.4302506 buyer7 got a match reply from seller4
-1666182310.4817584 buyer0 got a match reply from seller5
-buyer7 purchase item boar from  seller4 at 1666182310.4912448
-seller4 now has 4 remaining for item boar
-1666182310.4990141 buyer7 bought boar from seller4
-Buyer buyer7 now picked item fish to buy at time 1666182310.4990494
-1666182310.501704 buyer0 got a match reply from seller4
-1666182310.5125737 buyer7 got a match reply from seller5
-buyer0 purchase item boar from  seller5 at 1666182310.5649683
-seller5 now has 4 remaining for item boar
-1666182310.5691917 buyer0 bought boar from seller5
-Buyer buyer0 now picked item boar to buy at time 1666182310.569215
-1666182310.5708225 buyer0 got a match reply from seller4
-1666182310.5921254 buyer2 got a match reply from seller8
-1666182310.6033542 buyer2 got a match reply from seller8
-1666182310.62229 buyer0 got a match reply from seller4
-1666182310.6527138 buyer7 got a match reply from seller5
-1666182310.6640537 buyer0 got a match reply from seller5
-Buyer buyer2 issues lookup to buyer0 at time 1666182311.4063966
-Buyer buyer2 issues lookup to seller6 at time 1666182311.4079742
-Buyer buyer2 issues lookup to seller3 at time 1666182311.4101205
-1666182311.4281452 buyer2 picked seller8 to purchase fish
-buyer2 purchase item fish from  seller8 at 1666182311.455465
+buyer0 joined the bazar as buyer looking for fish at 1666184125.5896466
+seller5 joined the bazar as seller selling salt at 1666184125.591085
+buyer2 joined the bazar as buyer looking for boar at 1666184125.5939255
+seller1 joined the bazar as seller selling fish at 1666184125.5943716
+seller4 joined the bazar as seller selling boar at 1666184125.5951352
+seller7 joined the bazar as seller selling boar at 1666184125.596378
+seller8 joined the bazar as seller selling fish at 1666184125.5973592
+seller6 joined the bazar as seller selling boar at 1666184125.5977345
+buyer3 joined the bazar as buyer looking for fish at 1666184125.5985534
+buyer9 joined the bazar as buyer looking for salt at 1666184125.5989852
+Buyer buyer0 issues lookup to seller7 at time 1666184127.6135988
+Buyer buyer0 issues lookup to seller6 at time 1666184127.6173754
+Buyer buyer2 issues lookup to buyer9 at time 1666184127.621478
+Buyer buyer9 issues lookup to buyer2 at time 1666184127.6224873
+Buyer buyer0 issues lookup to seller5 at time 1666184127.6231687
+Buyer buyer3 issues lookup to seller1 at time 1666184127.626496
+Buyer buyer9 issues lookup to seller8 at time 1666184127.6269782
+Buyer buyer2 issues lookup to seller8 at time 1666184127.6272793
+Buyer buyer2 issues lookup to buyer3 at time 1666184127.6344674
+Buyer buyer3 issues lookup to buyer2 at time 1666184127.6394463
+Buyer buyer9 now picked item boar to buy at time 1666184127.6641731
+1666184127.6648862 buyer3 got a match reply from seller1
+Buyer buyer3 issues lookup to seller5 at time 1666184127.6697812
+Buyer buyer0 now picked item salt to buy at time 1666184127.6895845
+Buyer buyer2 now picked item salt to buy at time 1666184127.6916335
+1666184127.7438512 buyer0 got a match reply from seller1
+1666184127.7506914 buyer2 got a match reply from seller6
+1666184127.7647052 buyer2 got a match reply from seller7
+1666184127.7653985 buyer2 got a match reply from seller7
+1666184127.7769313 buyer2 got a match reply from seller7
+1666184127.7923484 buyer0 got a match reply from seller8
+1666184127.8166528 buyer2 got a match reply from seller6
+1666184127.8302019 buyer3 picked seller1 to purchase fish
+1666184127.8393333 buyer9 got a match reply from seller5
+1666184127.9378576 buyer9 got a match reply from seller5
+1666184127.9615753 buyer2 got a match reply from seller7
+1666184127.9756649 buyer2 got a match reply from seller7
+1666184127.983663 buyer2 got a match reply from seller6
+1666184127.987797 buyer9 got a match reply from seller5
+1666184127.9921825 buyer3 got a match reply from seller8
+1666184128.018798 buyer3 got a match reply from seller1
+1666184128.0672362 buyer3 got a match reply from seller8
+1666184128.068415 buyer9 got a match reply from seller5
+1666184128.0792093 buyer3 got a match reply from seller8
+1666184128.0814805 buyer9 got a match reply from seller5
+1666184128.1381605 buyer9 got a match reply from seller5
+buyer3 purchase item fish from  seller1 at 1666184128.139026
+seller1 now has 4 remaining for item fish
+1666184128.1499033 buyer3 bought fish from seller1
+Buyer buyer3 now picked item boar to buy at time 1666184128.1499314
+1666184128.1649165 buyer3 got a match reply from seller8
+1666184128.1662385 buyer2 got a match reply from seller7
+1666184128.1747632 buyer0 got a match reply from seller8
+1666184128.1758022 buyer3 got a match reply from seller8
+1666184128.178172 buyer0 got a match reply from seller8
+1666184128.2105136 buyer0 got a match reply from seller8
+1666184128.233113 buyer0 got a match reply from seller1
+1666184128.2411644 buyer9 got a match reply from seller5
+1666184128.2437632 buyer2 got a match reply from seller7
+1666184128.2746663 buyer3 got a match reply from seller8
+1666184128.29344 buyer9 got a match reply from seller5
+1666184128.2965264 buyer0 got a match reply from seller1
+1666184128.2977123 buyer9 got a match reply from seller5
+1666184128.3330417 buyer9 got a match reply from seller5
+Buyer buyer9 issues lookup to buyer2 at time 1666184128.6654713
+Buyer buyer9 issues lookup to seller8 at time 1666184128.6669497
+1666184128.6885502 buyer9 picked seller5 to purchase boar
+Buyer buyer0 issues lookup to seller7 at time 1666184128.6932755
+Buyer buyer2 issues lookup to buyer9 at time 1666184128.6978638
+Buyer buyer0 issues lookup to seller6 at time 1666184128.707746
+Buyer buyer2 issues lookup to seller8 at time 1666184128.7178512
+buyer9 purchase item salt from  seller5 at 1666184128.72059
+seller5 now has 4 remaining for item salt
+1666184128.7280908 buyer9 bought boar from seller5
+Buyer buyer9 now picked item boar to buy at time 1666184128.7281199
+Buyer buyer0 issues lookup to seller5 at time 1666184128.7321746
+Buyer buyer2 issues lookup to buyer3 at time 1666184128.7519398
+1666184128.7731216 buyer9 got a match reply from seller7
+1666184128.7806072 buyer9 got a match reply from seller7
+1666184128.81732 buyer9 got a match reply from seller6
+1666184128.8328106 buyer9 got a match reply from seller7
+1666184128.8543038 buyer0 picked seller8 to purchase salt
+1666184128.8724968 buyer9 got a match reply from seller6
+1666184128.9053802 buyer9 got a match reply from seller7
+1666184128.9174194 buyer2 picked seller7 to purchase salt
+1666184128.9177334 buyer9 got a match reply from seller7
+buyer0 purchase item fish from  seller8 at 1666184128.9227986
 seller8 now has 4 remaining for item fish
-1666182311.4613738 buyer2 bought fish from seller8
-Buyer buyer2 now picked item boar to buy at time 1666182311.4614022
-Buyer buyer7 issues lookup to buyer0 at time 1666182311.501595
-Buyer buyer7 issues lookup to seller1 at time 1666182311.5180333
-1666182311.5197332 buyer2 got a match reply from seller8
-1666182311.5262427 buyer2 got a match reply from seller8
-Buyer buyer7 issues lookup to seller4 at time 1666182311.5305922
-Buyer buyer0 issues lookup to buyer2 at time 1666182311.5748575
-1666182311.5816483 buyer7 picked seller5 to purchase fish
-1666182311.587375 buyer7 got a match reply from seller8
-Buyer buyer0 issues lookup to seller5 at time 1666182311.5896063
-1666182311.6010656 buyer7 got a match reply from seller8
-Buyer buyer0 issues lookup to buyer7 at time 1666182311.604556
-buyer7 purchase item boar from  seller5 at 1666182311.6130333
-seller5 now has 3 remaining for item boar
-1666182311.621118 buyer7 bought fish from seller5
-Buyer buyer7 now picked item salt to buy at time 1666182311.6211429
-1666182311.6726975 buyer0 got a match reply from seller5
-1666182311.6768363 buyer0 picked seller4 to purchase boar
-1666182311.6839838 buyer7 got a match reply from seller8
-1666182311.7019827 buyer0 got a match reply from seller4
-buyer0 purchase item boar from  seller4 at 1666182311.7100701
-seller4 now has 3 remaining for item boar
-1666182311.7163374 buyer0 bought boar from seller4
-Buyer buyer0 now picked item fish to buy at time 1666182311.7163694
-1666182311.7456234 buyer0 got a match reply from seller5
-1666182311.76421 buyer0 got a match reply from seller4
-1666182311.7732341 buyer0 got a match reply from seller5
-1666182311.774511 buyer0 got a match reply from seller4
-Buyer buyer2 issues lookup to buyer0 at time 1666182312.4627602
-Buyer buyer2 issues lookup to seller6 at time 1666182312.4643517
-Buyer buyer2 issues lookup to seller3 at time 1666182312.4661198
-1666182312.4797533 buyer2 picked seller8 to purchase boar
-1666182312.4869812 buyer2 got a match reply from seller5
-buyer2 purchase item fish from  seller8 at 1666182312.5033233
+1666184128.9306312 buyer9 got a match reply from seller6
+1666184128.9317641 buyer0 bought salt from seller8
+Buyer buyer0 now picked item boar to buy at time 1666184128.931794
+buyer2 purchase item boar from  seller7 at 1666184128.9727514
+seller7 now has 4 remaining for item boar
+1666184128.9730537 buyer0 got a match reply from seller5
+1666184129.003074 buyer2 bought salt from seller7
+Buyer buyer2 now picked item salt to buy at time 1666184129.0030973
+1666184129.126296 buyer2 got a match reply from seller5
+1666184129.1361816 buyer2 got a match reply from seller5
+1666184129.1502225 buyer2 got a match reply from seller5
+Buyer buyer3 issues lookup to seller1 at time 1666184129.155153
+1666184129.1726038 buyer9 got a match reply from seller7
+Buyer buyer3 issues lookup to buyer2 at time 1666184129.1795769
+Buyer buyer3 issues lookup to seller5 at time 1666184129.199898
+1666184129.2131293 buyer2 got a match reply from seller5
+1666184129.234821 buyer0 got a match reply from seller5
+1666184129.2452974 buyer2 got a match reply from seller5
+1666184129.2735326 buyer2 got a match reply from seller5
+1666184129.2862282 buyer2 got a match reply from seller5
+1666184129.309883 buyer3 picked seller8 to purchase boar
+1666184129.3204007 buyer3 got a match reply from seller7
+buyer3 purchase item fish from  seller8 at 1666184129.3409069
 seller8 now has 3 remaining for item fish
-1666182312.5052273 buyer2 bought boar from seller8
-Buyer buyer2 now picked item salt to buy at time 1666182312.5052593
-1666182312.513932 buyer2 got a match reply from seller5
-1666182312.5184727 buyer2 got a match reply from seller5
-1666182312.5226307 buyer2 got a match reply from seller5
-1666182312.5258925 buyer2 got a match reply from seller5
-1666182312.5263147 buyer2 got a match reply from seller4
-Buyer buyer7 issues lookup to buyer0 at time 1666182312.6226742
-Buyer buyer7 issues lookup to seller1 at time 1666182312.6242182
-Buyer buyer7 issues lookup to seller4 at time 1666182312.6284432
-1666182312.6463242 buyer7 got a match reply from seller1
-1666182312.646934 buyer7 picked seller8 to purchase salt
-1666182312.6656415 buyer7 got a match reply from seller6
-1666182312.6693606 buyer7 got a match reply from seller6
-1666182312.6736772 buyer7 got a match reply from seller9
-buyer7 purchase item fish from  seller8 at 1666182312.6817229
+1666184129.342698 buyer3 bought boar from seller8
+Buyer buyer3 now picked item salt to buy at time 1666184129.3427286
+1666184129.3502731 buyer3 got a match reply from seller7
+1666184129.3751054 buyer3 got a match reply from seller6
+1666184129.407746 buyer3 got a match reply from seller7
+1666184129.4236698 buyer3 got a match reply from seller6
+1666184129.4388995 buyer3 got a match reply from seller7
+1666184129.459287 buyer3 got a match reply from seller6
+1666184129.4904559 buyer3 got a match reply from seller7
+1666184129.517853 buyer3 got a match reply from seller6
+Buyer buyer9 issues lookup to buyer2 at time 1666184129.729781
+Buyer buyer9 issues lookup to seller8 at time 1666184129.7315574
+1666184129.7499578 buyer9 picked seller7 to purchase boar
+buyer9 purchase item boar from  seller7 at 1666184129.7692065
+seller7 now has 3 remaining for item boar
+1666184129.772753 buyer9 bought boar from seller7
+Buyer buyer9 now picked item fish to buy at time 1666184129.7727823
+1666184129.8028934 buyer9 got a match reply from seller7
+1666184129.8423312 buyer9 got a match reply from seller7
+1666184129.8469703 buyer9 got a match reply from seller6
+1666184129.8636966 buyer9 got a match reply from seller7
+1666184129.875595 buyer9 got a match reply from seller7
+1666184129.8826811 buyer9 got a match reply from seller6
+1666184129.9230828 buyer9 got a match reply from seller6
+Buyer buyer0 issues lookup to seller7 at time 1666184129.9441202
+1666184129.9516287 buyer9 got a match reply from seller7
+Buyer buyer0 issues lookup to seller6 at time 1666184129.9617617
+Buyer buyer0 issues lookup to seller5 at time 1666184129.9812372
+Buyer buyer2 issues lookup to buyer9 at time 1666184130.0071213
+Buyer buyer2 issues lookup to seller8 at time 1666184130.026017
+1666184130.038363 buyer0 got a match reply from seller6
+Buyer buyer2 issues lookup to buyer3 at time 1666184130.0394728
+1666184130.0427814 buyer0 got a match reply from seller7
+1666184130.0506766 buyer0 picked seller5 to purchase boar
+buyer0 purchase item salt from  seller5 at 1666184130.089498
+seller5 now has 3 remaining for item salt
+1666184130.0939872 buyer0 bought boar from seller5
+Buyer buyer0 now picked item salt to buy at time 1666184130.0940182
+1666184130.0976975 buyer2 picked seller5 to purchase salt
+buyer2 purchase item salt from  seller5 at 1666184130.138726
+seller5 now has 2 remaining for item salt
+1666184130.1421237 buyer2 bought salt from seller5
+Buyer buyer2 now picked item salt to buy at time 1666184130.1421523
+1666184130.1528058 buyer9 got a match reply from seller7
+1666184130.2170753 buyer2 got a match reply from seller5
+1666184130.2321815 buyer2 got a match reply from seller5
+1666184130.2400491 buyer2 got a match reply from seller5
+1666184130.2801445 buyer2 got a match reply from seller5
+1666184130.2937756 buyer2 got a match reply from seller5
+1666184130.2949615 buyer0 got a match reply from seller7
+Buyer buyer3 issues lookup to seller1 at time 1666184130.3534486
+Buyer buyer3 issues lookup to buyer2 at time 1666184130.3812244
+Buyer buyer3 issues lookup to seller5 at time 1666184130.4056344
+1666184130.4095469 buyer2 got a match reply from seller5
+1666184130.4180698 buyer2 got a match reply from seller5
+1666184130.5707448 buyer3 got a match reply from seller5
+1666184130.57523 buyer3 picked seller7 to purchase salt
+1666184130.6085277 buyer3 got a match reply from seller5
+1666184130.613732 buyer3 got a match reply from seller5
+buyer3 purchase item boar from  seller7 at 1666184130.6320348
+seller7 now has 2 remaining for item boar
+1666184130.640387 buyer3 bought salt from seller7
+Buyer buyer3 now picked item salt to buy at time 1666184130.6404135
+1666184130.6422896 buyer3 got a match reply from seller5
+1666184130.688749 buyer3 got a match reply from seller5
+1666184130.7092674 buyer3 got a match reply from seller5
+1666184130.7284706 buyer3 got a match reply from seller5
+Buyer buyer9 issues lookup to buyer2 at time 1666184130.7742908
+Buyer buyer9 issues lookup to seller8 at time 1666184130.7757118
+1666184130.7879841 buyer9 got a match reply from seller8
+1666184130.7881796 buyer9 picked seller7 to purchase fish
+1666184130.7931912 buyer9 got a match reply from seller8
+buyer9 purchase item boar from  seller7 at 1666184130.7970908
+seller7 now has 1 remaining for item boar
+1666184130.7986717 buyer9 bought fish from seller7
+Buyer buyer9 now picked item boar to buy at time 1666184130.7986948
+1666184130.8017848 buyer9 got a match reply from seller1
+1666184130.8099647 buyer9 got a match reply from seller8
+1666184130.830357 buyer9 got a match reply from seller1
+1666184130.8353078 buyer9 got a match reply from seller1
+1666184130.8416514 buyer9 got a match reply from seller8
+Buyer buyer0 issues lookup to seller7 at time 1666184131.0950425
+Buyer buyer0 issues lookup to seller6 at time 1666184131.0967329
+Buyer buyer0 issues lookup to seller5 at time 1666184131.0987978
+1666184131.111209 buyer0 got a match reply from seller5
+1666184131.1117167 buyer0 picked seller5 to purchase salt
+buyer0 purchase item salt from  seller5 at 1666184131.1260386
+seller5 now has 1 remaining for item salt
+1666184131.127439 buyer0 bought salt from seller5
+Buyer buyer0 now picked item salt to buy at time 1666184131.1274672
+Buyer buyer2 issues lookup to buyer9 at time 1666184131.148473
+Buyer buyer2 issues lookup to seller8 at time 1666184131.160202
+1666184131.1643236 buyer0 got a match reply from seller5
+Buyer buyer2 issues lookup to buyer3 at time 1666184131.170065
+1666184131.187047 buyer2 picked seller5 to purchase salt
+1666184131.19487 buyer2 got a match reply from seller5
+1666184131.1960995 buyer2 got a match reply from seller5
+1666184131.2054708 buyer2 got a match reply from seller5
+buyer2 purchase item salt from  seller5 at 1666184131.2076616
+seller5 now has 0 remaining for item salt
+1666184131.2097137 buyer2 bought salt from seller5
+Buyer buyer2 now picked item fish to buy at time 1666184131.2097387
+1666184131.2273304 buyer2 got a match reply from seller5
+1666184131.2381659 buyer2 got a match reply from seller5
+1666184131.24133 buyer2 got a match reply from seller5
+1666184131.2670362 buyer2 got a match reply from seller5
+Buyer buyer3 issues lookup to seller1 at time 1666184131.6419075
+Buyer buyer3 issues lookup to buyer2 at time 1666184131.643308
+Buyer buyer3 issues lookup to seller5 at time 1666184131.6469262
+1666184131.664811 buyer3 picked seller5 to purchase salt
+1666184131.6716275 buyer3 got a match reply from seller5
+1666184131.710682 buyer3 got a match reply from seller5
+1666184131.7415955 buyer3 failed to buy salt from seller5
+Buyer buyer3 now picked item salt to buy at time 1666184131.741622
+1666184131.7420921 buyer3 got a match reply from seller5
+1666184131.7544649 buyer3 got a match reply from seller5
+Buyer buyer9 issues lookup to buyer2 at time 1666184131.805742
+Buyer buyer9 issues lookup to seller8 at time 1666184131.8151224
+1666184131.8506627 buyer9 picked seller8 to purchase boar
+buyer9 purchase item fish from  seller8 at 1666184131.8892365
 seller8 now has 2 remaining for item fish
-1666182312.6842878 buyer7 bought salt from seller8
-Buyer buyer7 now picked item salt to buy at time 1666182312.684312
-1666182312.684906 buyer7 got a match reply from seller3
-1666182312.689401 buyer7 got a match reply from seller1
-1666182312.6987045 buyer7 got a match reply from seller9
-Buyer buyer0 issues lookup to buyer2 at time 1666182312.7177875
-Buyer buyer0 issues lookup to seller5 at time 1666182312.7193444
-Buyer buyer0 issues lookup to buyer7 at time 1666182312.7225242
-1666182312.750299 buyer0 picked seller5 to purchase fish
-buyer0 purchase item boar from  seller5 at 1666182312.8072317
-seller5 now has 2 remaining for item boar
-1666182312.8143208 buyer0 got a match reply from seller8
-1666182312.8155067 buyer0 bought fish from seller5
-Buyer buyer0 now picked item fish to buy at time 1666182312.8155322
-1666182312.82549 buyer0 got a match reply from seller8
-Buyer buyer2 issues lookup to buyer0 at time 1666182313.5065017
-Buyer buyer2 issues lookup to seller6 at time 1666182313.5084026
-Buyer buyer2 issues lookup to seller3 at time 1666182313.5123873
-1666182313.5293813 buyer2 got a match reply from seller6
-1666182313.541743 buyer2 got a match reply from seller3
-1666182313.5424435 buyer2 picked seller5 to purchase salt
-1666182313.5487707 buyer2 got a match reply from seller6
-1666182313.5513837 buyer2 got a match reply from seller1
-buyer2 purchase item boar from  seller5 at 1666182313.5614753
-seller5 now has 1 remaining for item boar
-1666182313.5629113 buyer2 bought salt from seller5
-Buyer buyer2 now picked item salt to buy at time 1666182313.5629356
-1666182313.581863 buyer2 got a match reply from seller9
-Buyer buyer7 issues lookup to buyer0 at time 1666182313.6854467
-Buyer buyer7 issues lookup to seller1 at time 1666182313.687015
-Buyer buyer7 issues lookup to seller4 at time 1666182313.6888216
-1666182313.703714 buyer7 got a match reply from seller1
-1666182313.7123659 buyer7 picked seller9 to purchase salt
-1666182313.736706 buyer7 got a match reply from seller6
-1666182313.7412748 buyer7 got a match reply from seller9
-1666182313.7429843 buyer7 1666182313.7440753 buyer7 got a match reply from seller3
-got a match reply from seller6
-buyer7 purchase item salt from  seller9 at 1666182313.749482
-seller9 now has 4 remaining for item salt
-1666182313.7501547 buyer7 got a match reply from seller1
-1666182313.7516854 buyer7 bought salt from seller9
-Buyer buyer7 now picked item fish to buy at time 1666182313.7517154
-1666182313.7640524 buyer7 got a match reply from seller9
-Buyer buyer0 issues lookup to buyer2 at time 1666182313.817064
-Buyer buyer0 issues lookup to seller5 at time 1666182313.8188643
-Buyer buyer0 issues lookup to buyer7 at time 1666182313.8215008
-1666182313.8399773 buyer0 picked seller8 to purchase fish
-buyer0 purchase item fish from  seller8 at 1666182313.8955297
+1666184131.898574 buyer9 bought boar from seller8
+Buyer buyer9 now picked item salt to buy at time 1666184131.8986
+1666184131.9329977 buyer9 got a match reply from seller7
+1666184131.9379017 buyer9 got a match reply from seller7
+1666184131.9454815 buyer9 got a match reply from seller6
+1666184131.998647 buyer9 got a match reply from seller7
+1666184132.0027313 buyer9 got a match reply from seller7
+1666184132.0268126 buyer9 got a match reply from seller6
+1666184132.0407884 buyer9 got a match reply from seller6
+1666184132.0700958 buyer9 got a match reply from seller7
+1666184132.0838206 buyer9 got a match reply from seller7
+Buyer buyer0 issues lookup to seller7 at time 1666184132.1352246
+Buyer buyer0 issues lookup to seller6 at time 1666184132.1449914
+Buyer buyer0 issues lookup to seller5 at time 1666184132.1546345
+Buyer buyer2 issues lookup to buyer9 at time 1666184132.2120154
+1666184132.21351 buyer0 picked seller5 to purchase salt
+Buyer buyer2 issues lookup to seller8 at time 1666184132.2243323
+Buyer buyer2 issues lookup to buyer3 at time 1666184132.23735
+1666184132.2674398 buyer0 failed to buy salt from seller5
+Buyer buyer0 now picked item salt to buy at time 1666184132.2674665
+1666184132.276361 buyer2 got a match reply from seller8
+1666184132.2989135 buyer2 got a match reply from seller8
+1666184132.3013916 buyer2 picked seller5 to purchase fish
+seller5 is now the seller of salt.
+1666184132.3426173 buyer2 failed to buy fish from seller5
+Buyer buyer2 now picked item salt to buy at time 1666184132.3426456
+1666184132.3501153 buyer2 got a match reply from seller1
+1666184132.3695362 buyer0 got a match reply from seller5
+1666184132.402739 buyer0 got a match reply from seller5
+1666184132.4381194 buyer2 got a match reply from seller8
+1666184132.4563508 buyer0 got a match reply from seller5
+1666184132.4600954 buyer0 got a match reply from seller5
+1666184132.464625 buyer2 got a match reply from seller1
+1666184132.481669 buyer2 got a match reply from seller1
+1666184132.5883684 buyer0 got a match reply from seller5
+1666184132.5916343 buyer0 got a match reply from seller5
+1666184132.6007867 buyer0 got a match reply from seller5
+1666184132.6090376 buyer2 got a match reply from seller8
+1666184132.6116807 buyer0 got a match reply from seller5
+1666184132.6137774 buyer2 got a match reply from seller8
+1666184132.6270463 buyer0 got a match reply from seller5
+Buyer buyer3 issues lookup to seller1 at time 1666184132.7432406
+Buyer buyer3 issues lookup to buyer2 at time 1666184132.7449057
+Buyer buyer3 issues lookup to seller5 at time 1666184132.7488956
+1666184132.780895 buyer3 got a match reply from seller5
+1666184132.7839267 buyer3 picked seller5 to purchase salt
+1666184132.8201075 buyer3 got a match reply from seller5
+1666184132.82125 buyer3 got a match reply from seller5
+buyer3 purchase item salt from  seller5 at 1666184132.8262897
+seller5 now has 9 remaining for item salt
+1666184132.8309624 buyer3 got a match reply from seller5
+1666184132.8392134 buyer3 bought salt from seller5
+Buyer buyer3 now picked item boar to buy at time 1666184132.8392482
+1666184132.8818116 buyer3 got a match reply from seller5
+Buyer buyer9 issues lookup to buyer2 at time 1666184132.905534
+Buyer buyer9 issues lookup to seller8 at time 1666184132.9150574
+1666184132.9251425 buyer3 got a match reply from seller5
+1666184132.948352 buyer9 picked seller7 to purchase salt
+1666184132.9519877 buyer3 got a match reply from seller5
+1666184132.981121 buyer9 got a match reply from seller5
+1666184132.9846709 buyer9 got a match reply from seller5
+buyer9 purchase item boar from  seller7 at 1666184132.9944901
+seller7 now has 0 remaining for item boar
+1666184133.0023687 buyer9 got a match reply from seller5
+1666184133.0044641 buyer9 bought salt from seller7
+Buyer buyer9 now picked item fish to buy at time 1666184133.0044956
+1666184133.0310435 buyer9 got a match reply from seller5
+1666184133.0354877 buyer9 got a match reply from seller5
+1666184133.0575645 buyer9 got a match reply from seller5
+1666184133.068596 buyer9 got a match reply from seller5
+1666184133.0735006 buyer9 got a match reply from seller5
+1666184133.104425 buyer9 got a match reply from seller5
+1666184133.107864 buyer9 got a match reply from seller5
+Buyer buyer0 issues lookup to seller7 at time 1666184133.268825
+Buyer buyer0 issues lookup to seller6 at time 1666184133.2701905
+Buyer buyer0 issues lookup to seller5 at time 1666184133.2742743
+1666184133.2958643 buyer0 picked seller5 to purchase salt
+1666184133.2964237 buyer0 got a match reply from seller5
+buyer0 purchase item salt from  seller5 at 1666184133.3475292
+seller5 now has 8 remaining for item salt
+Buyer buyer2 issues lookup to buyer9 at time 1666184133.3477762
+1666184133.3485966 buyer0 got a match reply from seller5
+Buyer buyer2 issues lookup to seller8 at time 1666184133.3539765
+1666184133.354196 buyer0 bought salt from seller5
+Buyer buyer0 now picked item boar to buy at time 1666184133.3542213
+Buyer buyer2 issues lookup to buyer3 at time 1666184133.3670912
+1666184133.3874443 buyer2 picked seller1 to purchase salt
+1666184133.3888 buyer2 got a match reply from seller5
+1666184133.4024808 buyer2 got a match reply from seller5
+buyer2 purchase item fish from  seller1 at 1666184133.4051795
+seller1 now has 3 remaining for item fish
+1666184133.408197 buyer2 bought salt from seller1
+Buyer buyer2 now picked item salt to buy at time 1666184133.4082208
+1666184133.4137208 buyer2 got a match reply from seller5
+1666184133.4178772 buyer2 got a match reply from seller5
+1666184133.4295819 buyer2 got a match reply from seller5
+1666184133.4339797 buyer2 got a match reply from seller5
+1666184133.463627 buyer2 got a match reply from seller5
+Buyer buyer3 issues lookup to seller1 at time 1666184133.840539
+Buyer buyer3 issues lookup to buyer2 at time 1666184133.842103
+Buyer buyer3 issues lookup to seller5 at time 1666184133.8461475
+1666184133.857538 buyer3 got a match reply from seller7
+1666184133.862272 buyer3 picked seller5 to purchase boar
+1666184133.8875914 buyer3 got a match reply from seller7
+1666184133.907948 buyer3 got a match reply from seller6
+buyer3 purchase item salt from  seller5 at 1666184133.909468
+seller5 now has 7 remaining for item salt
+1666184133.919838 buyer3 bought boar from seller5
+Buyer buyer3 now picked item salt to buy at time 1666184133.9198663
+1666184133.9574978 buyer3 got a match reply from seller7
+1666184133.9712946 buyer3 got a match reply from seller7
+1666184133.9892235 buyer3 got a match reply from seller6
+1666184133.9966383 buyer3 got a match reply from seller6
+Buyer buyer9 issues lookup to buyer2 at time 1666184134.0121555
+Buyer buyer9 issues lookup to seller8 at time 1666184134.0246503
+1666184134.0494792 buyer3 got a match reply from seller7
+1666184134.0662813 buyer3 got a match reply from seller6
+1666184134.128119 buyer9 picked seller5 to purchase fish
+1666184134.1323812 buyer9 got a match reply from seller1
+buyer9 purchase item salt from  seller5 at 1666184134.1790771
+seller5 now has 6 remaining for item salt
+1666184134.1871755 buyer9 bought fish from seller5
+Buyer buyer9 now picked item boar to buy at time 1666184134.1872137
+1666184134.2018826 buyer9 got a match reply from seller1
+1666184134.2189133 buyer9 got a match reply from seller1
+1666184134.258053 buyer9 got a match reply from seller8
+1666184134.2608376 buyer9 got a match reply from seller8
+1666184134.2634137 buyer9 got a match reply from seller8
+1666184134.2647839 buyer9 got a match reply from seller8
+Buyer buyer0 issues lookup to seller7 at time 1666184134.3547792
+Buyer buyer0 issues lookup to seller6 at time 1666184134.356425
+Buyer buyer0 issues lookup to seller5 at time 1666184134.3580801
+1666184134.3665576 buyer0 got a match reply from seller7
+1666184134.3683379 buyer0 got a match reply from seller6
+1666184134.371861 buyer0 picked seller7 to purchase boar
+1666184134.3927562 buyer0 failed to buy boar from seller7
+Buyer buyer0 now picked item fish to buy at time 1666184134.3927848
+Buyer buyer2 issues lookup to buyer9 at time 1666184134.4131029
+1666184134.417207 buyer0 got a match reply from seller7
+Buyer buyer2 issues lookup to seller8 at time 1666184134.4446754
+Buyer buyer2 issues lookup to buyer3 at time 1666184134.4624944
+1666184134.5848172 buyer2 picked seller5 to purchase salt
+buyer2 purchase item salt from  seller5 at 1666184134.626113
+seller5 now has 5 remaining for item salt
+1666184134.6326115 buyer2 bought salt from seller5
+Buyer buyer2 now picked item boar to buy at time 1666184134.6326396
+1666184134.654723 buyer2 got a match reply from seller5
+1666184134.6670682 buyer2 got a match reply from seller7
+1666184134.6728733 buyer2 got a match reply from seller5
+1666184134.6750712 buyer2 got a match reply from seller5
+1666184134.6805656 buyer2 got a match reply from seller5
+1666184134.689654 buyer2 got a match reply from seller5
+1666184134.692455 buyer2 got a match reply from seller7
+1666184134.6964333 buyer2 got a match reply from seller5
+Buyer buyer3 issues lookup to seller1 at time 1666184134.921404
+Buyer buyer3 issues lookup to buyer2 at time 1666184134.9228706
+Buyer buyer3 issues lookup to seller5 at time 1666184134.9246743
+1666184134.9429648 buyer3 got a match reply from seller7
+1666184134.9492002 buyer3 picked seller7 to purchase salt
+1666184134.9503467 buyer3 got a match reply from seller5
+1666184134.9839542 buyer3 failed to buy salt from seller7
+Buyer buyer3 now picked item fish to buy at time 1666184134.9839857
+1666184134.9862483 buyer3 got a match reply from seller5
+1666184134.9914446 buyer3 got a match reply from seller5
+1666184135.0152462 buyer3 got a match reply from seller5
+1666184135.0477192 buyer3 got a match reply from seller5
+1666184135.0693173 buyer3 got a match reply from seller5
+Buyer buyer9 issues lookup to buyer2 at time 1666184135.188734
+Buyer buyer9 issues lookup to seller8 at time 1666184135.1901371
+1666184135.200233 buyer9 picked seller8 to purchase boar
+buyer9 purchase item fish from  seller8 at 1666184135.235382
 seller8 now has 1 remaining for item fish
-1666182313.8977394 buyer0 bought fish from seller8
-Buyer buyer0 now picked item boar to buy at time 1666182313.8977664
-1666182313.9483252 buyer0 got a match reply from seller8
-1666182313.953977 buyer0 got a match reply from seller8
-Buyer buyer2 issues lookup to buyer0 at time 1666182314.5644665
-Buyer buyer2 issues lookup to seller6 at time 1666182314.5661876
-Buyer buyer2 issues lookup to seller3 at time 1666182314.5700276
-1666182314.585966 buyer2 got a match reply from seller6
-1666182314.5971014 buyer2 got a match reply from seller3
-1666182314.6007726 buyer2 picked seller3 to purchase salt
-1666182314.60977 buyer2 got a match reply from seller6
-1666182314.6160383 buyer2 got a match reply from seller1
-buyer2 purchase item salt from  seller3 at 1666182314.6255686
-seller3 now has 4 remaining for item salt
-1666182314.6283028 buyer2 bought salt from seller3
-Buyer buyer2 now picked item salt to buy at time 1666182314.6283317
-1666182314.6386228 buyer2 got a match reply from seller9
-Buyer buyer7 issues lookup to buyer0 at time 1666182314.753254
-Buyer buyer7 issues lookup to seller1 at time 1666182314.754785
-Buyer buyer7 issues lookup to seller4 at time 1666182314.7577379
-1666182314.7817502 buyer7 picked seller6 to purchase fish
-1666182314.800485 buyer7 got a match reply from seller8
-1666182314.8055847 buyer7 got a match reply from seller8
-buyer7 purchase item salt from  seller6 at 1666182314.8257444
-seller6 now has 4 remaining for item salt
-1666182314.8360088 buyer7 bought fish from seller6
-Buyer buyer7 now picked item salt to buy at time 1666182314.8360405
-1666182314.8520834 buyer7 got a match reply from seller8
-Buyer buyer0 issues lookup to buyer2 at time 1666182314.8990629
-Buyer buyer0 issues lookup to seller5 at time 1666182314.9005113
-Buyer buyer0 issues lookup to buyer7 at time 1666182314.9034467
-1666182314.9211464 buyer0 got a match reply from seller5
-1666182314.925433 buyer0 picked seller8 to purchase boar
-1666182314.958412 buyer0 got a match reply from seller5
-1666182314.9592347 buyer0 got a match reply from seller4
-buyer0 purchase item fish from  seller8 at 1666182314.98751
+1666184135.2418954 buyer9 bought boar from seller8
+Buyer buyer9 now picked item salt to buy at time 1666184135.2419221
+1666184135.3077621 buyer9 got a match reply from seller6
+1666184135.318988 buyer9 got a match reply from seller6
+1666184135.3984623 buyer9 got a match reply from seller6
+Buyer buyer0 issues lookup to seller7 at time 1666184135.4053957
+Buyer buyer0 issues lookup to seller6 at time 1666184135.4344885
+Buyer buyer0 issues lookup to seller5 at time 1666184135.4455106
+1666184135.4874148 buyer0 got a match reply from seller7
+1666184135.5393891 buyer0 picked seller7 to purchase fish
+seller7 is now the seller of fish.
+1666184135.586601 buyer0 failed to buy fish from seller7
+Buyer buyer0 now picked item fish to buy at time 1666184135.5866318
+Buyer buyer2 issues lookup to buyer9 at time 1666184135.6393728
+Buyer buyer2 issues lookup to seller8 at time 1666184135.6453032
+Buyer buyer2 issues lookup to buyer3 at time 1666184135.654947
+1666184135.6970673 buyer0 got a match reply from seller1
+1666184135.7204804 buyer2 picked seller5 to purchase boar
+1666184135.7299588 buyer0 got a match reply from seller8
+1666184135.7342644 buyer0 got a match reply from seller8
+1666184135.7516775 buyer0 got a match reply from seller8
+1666184135.762192 buyer0 got a match reply from seller1
+1666184135.7695444 buyer0 got a match reply from seller1
+1666184135.7707052 buyer0 got a match reply from seller8
+buyer2 purchase item salt from  seller5 at 1666184135.7711825
+seller5 now has 4 remaining for item salt
+1666184135.7813127 buyer2 bought boar from seller5
+Buyer buyer2 now picked item fish to buy at time 1666184135.7813444
+1666184135.8293674 buyer2 got a match reply from seller6
+1666184135.835929 buyer2 got a match reply from seller6
+1666184135.8974516 buyer2 got a match reply from seller6
+1666184135.9555604 buyer2 got a match reply from seller6
+Buyer buyer3 issues lookup to seller1 at time 1666184135.9939873
+Buyer buyer3 issues lookup to buyer2 at time 1666184136.0061967
+Buyer buyer3 issues lookup to seller5 at time 1666184136.0177958
+1666184136.0324633 buyer3 got a match reply from seller1
+1666184136.0513308 buyer3 picked seller5 to purchase fish
+1666184136.0782888 buyer3 got a match reply from seller8
+buyer3 purchase item salt from  seller5 at 1666184136.082676
+seller5 now has 3 remaining for item salt
+1666184136.0868645 buyer3 bought fish from seller5
+Buyer buyer3 now picked item boar to buy at time 1666184136.0868964
+1666184136.0935524 buyer3 got a match reply from seller8
+1666184136.1060534 buyer3 got a match reply from seller8
+1666184136.1304893 buyer3 got a match reply from seller8
+1666184136.1609392 buyer3 got a match reply from seller8
+1666184136.1653638 buyer3 got a match reply from seller7
+1666184136.1889904 buyer3 got a match reply from seller8
+1666184136.1961997 buyer3 got a match reply from seller7
+1666184136.1983776 buyer3 got a match reply from seller7
+Buyer buyer9 issues lookup to buyer2 at time 1666184136.2427423
+Buyer buyer9 issues lookup to seller8 at time 1666184136.2442815
+1666184136.2553153 buyer9 picked seller6 to purchase salt
+buyer9 purchase item boar from  seller6 at 1666184136.2725685
+seller6 now has 4 remaining for item boar
+1666184136.272789 buyer9 bought salt from seller6
+Buyer buyer9 now picked item boar to buy at time 1666184136.2728243
+1666184136.2777228 buyer9 got a match reply from seller5
+1666184136.2860756 buyer9 got a match reply from seller5
+1666184136.3229191 buyer9 got a match reply from seller5
+1666184136.3338356 buyer9 got a match reply from seller5
+1666184136.3345866 buyer9 got a match reply from seller5
+1666184136.3775225 buyer9 got a match reply from seller5
+1666184136.3783524 buyer9 got a match reply from seller5
+1666184136.4001205 buyer9 got a match reply from seller5
+1666184136.4017723 buyer9 got a match reply from seller5
+1666184136.4135282 buyer9 got a match reply from seller5
+Buyer buyer0 issues lookup to seller7 at time 1666184136.5879326
+Buyer buyer0 issues lookup to seller6 at time 1666184136.5893588
+Buyer buyer0 issues lookup to seller5 at time 1666184136.591466
+1666184136.5975115 buyer0 got a match reply from seller7
+1666184136.6035154 buyer0 picked seller8 to purchase fish
+1666184136.6157627 buyer0 got a match reply from seller8
+buyer0 purchase item fish from  seller8 at 1666184136.6161878
 seller8 now has 0 remaining for item fish
-1666182314.9900107 buyer0 bought boar from seller8
-Buyer buyer0 now picked item salt to buy at time 1666182314.9900403
-1666182315.0014663 buyer0 got a match reply from seller4
-1666182315.0077236 buyer0 got a match reply from seller4
-1666182315.0096452 buyer0 got a match reply from seller5
-Buyer buyer2 issues lookup to buyer0 at time 1666182315.629859
-Buyer buyer2 issues lookup to seller6 at time 1666182315.631202
-Buyer buyer2 issues lookup to seller3 at time 1666182315.6338246
-1666182315.6455863 buyer2 got a match reply from seller6
-1666182315.6573555 buyer2 picked seller9 to purchase salt
-1666182315.6601412 buyer2 got a match reply from seller3
-1666182315.6663468 buyer2 got a match reply from seller6
-buyer2 purchase item salt from  seller9 at 1666182315.6758578
-seller9 now has 3 remaining for item salt
-1666182315.6764648 buyer2 got a match reply from seller1
-1666182315.6773543 buyer2 bought salt from seller9
-Buyer buyer2 now picked item boar to buy at time 1666182315.6773794
-1666182315.7031145 buyer2 got a match reply from seller9
-Buyer buyer7 issues lookup to buyer0 at time 1666182315.8373728
-Buyer buyer7 issues lookup to seller1 at time 1666182315.8387039
-Buyer buyer7 issues lookup to seller4 at time 1666182315.8416922
-1666182315.864189 buyer7 got a match reply from seller1
-1666182315.8662398 buyer7 picked seller8 to purchase salt
-1666182315.8808553 buyer7 got a match reply from seller6
-1666182315.8915439 buyer7 got a match reply from seller9
-1666182315.8966868 buyer7 got a match reply from seller6
-1666182315.8972633 buyer7 got a match reply from seller3
+1666184136.61728 buyer0 bought fish from seller8
+Buyer buyer0 now picked item fish to buy at time 1666184136.6172981
+1666184136.6214077 buyer0 got a match reply from seller1
+1666184136.6433 buyer0 got a match reply from seller8
+1666184136.655929 buyer0 got a match reply from seller8
+1666184136.65718 buyer0 got a match reply from seller1
+1666184136.6627188 buyer0 got a match reply from seller8
+1666184136.674765 buyer0 got a match reply from seller1
+Buyer buyer2 issues lookup to buyer9 at time 1666184136.7828577
+Buyer buyer2 issues lookup to seller8 at time 1666184136.784495
+Buyer buyer2 issues lookup to buyer3 at time 1666184136.786568
+1666184136.7964945 buyer2 got a match reply from seller8
+1666184136.800192 buyer2 picked seller6 to purchase fish
+1666184136.800516 buyer2 got a match reply from seller8
+1666184136.8042185 buyer2 got a match reply from seller1
+buyer2 purchase item boar from  seller6 at 1666184136.8101454
+seller6 now has 3 remaining for item boar
+1666184136.8115435 buyer2 bought fish from seller6
+Buyer buyer2 now picked item salt to buy at time 1666184136.811574
+1666184136.8213766 buyer2 got a match reply from seller7
+1666184136.8246534 buyer2 got a match reply from seller8
+1666184136.8259716 buyer2 got a match reply from seller1
+1666184136.861693 buyer2 got a match reply from seller8
+1666184136.8637173 buyer2 got a match reply from seller8
+Buyer buyer3 issues lookup to seller1 at time 1666184137.0883968
+Buyer buyer3 issues lookup to buyer2 at time 1666184137.090048
+Buyer buyer3 issues lookup to seller5 at time 1666184137.0923522
+1666184137.110412 buyer3 picked seller7 to purchase boar
+1666184137.1465409 buyer3 got a match reply from seller6
+buyer3 purchase item fish from  seller7 at 1666184137.147056
+seller7 now has 9 remaining for item fish
+1666184137.1501198 buyer3 bought boar from seller7
+Buyer buyer3 now picked item boar to buy at time 1666184137.150153
+1666184137.1652048 buyer3 got a match reply from seller6
+1666184137.2467914 buyer3 got a match reply from seller6
+Buyer buyer9 issues lookup to buyer2 at time 1666184137.2776845
+1666184137.2977207 buyer3 got a match reply from seller6
+Buyer buyer9 issues lookup to seller8 at time 1666184137.3227522
+1666184137.3495533 buyer3 got a match reply from seller6
+1666184137.416023 buyer3 got a match reply from seller6
+1666184137.4428704 buyer9 picked seller5 to purchase boar
+buyer9 purchase item salt from  seller5 at 1666184137.4677052
+seller5 now has 2 remaining for item salt
+1666184137.4748054 buyer9 bought boar from seller5
+Buyer buyer9 now picked item salt to buy at time 1666184137.4748385
+1666184137.5591865 buyer9 got a match reply from seller6
+Buyer buyer0 issues lookup to seller7 at time 1666184137.6204586
+Buyer buyer0 issues lookup to seller6 at time 1666184137.6354322
+Buyer buyer0 issues lookup to seller5 at time 1666184137.6438382
+1666184137.650021 buyer9 got a match reply from seller6
+1666184137.680523 buyer0 got a match reply from seller7
+1666184137.7666092 buyer9 got a match reply from seller6
+1666184137.7688458 buyer0 picked seller8 to purchase fish
 seller8 is now the seller of fish.
-1666182315.906205 buyer7 got a match reply from seller1
-1666182315.9067254 buyer7 failed to buy salt from seller8
-Buyer buyer7 now picked item salt to buy at time 1666182315.9067507
-1666182315.9160218 buyer7 got a match reply from seller9
-Buyer buyer0 issues lookup to buyer2 at time 1666182315.9915628
-Buyer buyer0 issues lookup to seller5 at time 1666182315.9931765
-Buyer buyer0 issues lookup to buyer7 at time 1666182315.9968824
-1666182316.0082188 buyer0 got a match reply from seller6
-1666182316.0120633 buyer0 got a match reply from seller3
-1666182316.015405 buyer0 got a match reply from seller6
-1666182316.0155113 buyer0 picked seller5 to purchase salt
-1666182316.020476 buyer0 got a match reply from seller1
-buyer0 purchase item boar from  seller5 at 1666182316.0273736
-seller5 now has 0 remaining for item boar
-1666182316.029112 buyer0 bought salt from seller5
-Buyer buyer0 now picked item fish to buy at time 1666182316.0291433
-1666182316.0338366 buyer0 got a match reply from seller1
-1666182316.044217 buyer0 got a match reply from seller1
-1666182316.0445595 buyer0 got a match reply from seller9
-Buyer buyer2 issues lookup to buyer0 at time 1666182316.6790295
-Buyer buyer2 issues lookup to seller6 at time 1666182316.6805625
-Buyer buyer2 issues lookup to seller3 at time 1666182316.6823711
-1666182316.69549 buyer2 picked seller9 to purchase boar
-1666182316.7096834 buyer2 got a match reply from seller5
-1666182316.711836 buyer2 got a match reply from seller5
-buyer2 purchase item salt from  seller9 at 1666182316.7162905
-seller9 now has 2 remaining for item salt
-1666182316.718206 buyer2 bought boar from seller9
-Buyer buyer2 now picked item fish to buy at time 1666182316.7182295
-1666182316.7370868 buyer2 got a match reply from seller5
-1666182316.741833 buyer2 got a match reply from seller5
-1666182316.7460833 buyer2 got a match reply from seller4
-1666182316.7511117 buyer2 got a match reply from seller5
-Buyer buyer7 issues lookup to buyer0 at time 1666182316.908287
-Buyer buyer7 issues lookup to seller1 at time 1666182316.9100306
-Buyer buyer7 issues lookup to seller4 at time 1666182316.9125974
-1666182316.928569 buyer7 got a match reply from seller1
-1666182316.9322658 buyer7 picked seller1 to purchase salt
-1666182316.961271 buyer7 got a match reply from seller9
-1666182316.962969 buyer7 got a match reply from seller6
-buyer7 purchase item salt from  seller1 at 1666182316.9688308
-seller1 now has 4 remaining for item salt
-1666182316.9692023 buyer7 got a match reply from seller1
-1666182316.975716 buyer7 got a match reply from seller6
-1666182316.9771616 buyer7 bought salt from seller1
-Buyer buyer7 now picked item fish to buy at time 1666182316.9771926
-1666182316.982224 buyer7 got a match reply from seller3
-1666182316.9865768 buyer7 got a match reply from seller9
-Buyer buyer0 issues lookup to buyer2 at time 1666182317.0304909
-Buyer buyer0 issues lookup to seller5 at time 1666182317.0322402
-Buyer buyer0 issues lookup to buyer7 at time 1666182317.0353112
-1666182317.0599828 buyer0 picked seller1 to purchase fish
-buyer0 purchase item salt from  seller1 at 1666182317.0966837
-seller1 now has 3 remaining for item salt
-1666182317.1156347 buyer0 bought fish from seller1
-Buyer buyer0 now picked item fish to buy at time 1666182317.1156633
-1666182317.130318 buyer0 got a match reply from seller8
-1666182317.1350002 buyer0 got a match reply from seller8
-Buyer buyer2 issues lookup to buyer0 at time 1666182317.7190602
-Buyer buyer2 issues lookup to seller6 at time 1666182317.7205777
-Buyer buyer2 issues lookup to seller3 at time 1666182317.7230158
-1666182317.7451875 buyer2 picked seller5 to purchase fish
-1666182317.8263197 buyer2 failed to buy fish from seller5
-Buyer buyer2 now picked item boar to buy at time 1666182317.8298042
-1666182317.8324406 buyer2 got a match reply from seller8
-1666182317.839211 buyer2 got a match reply from seller8
-Buyer buyer7 issues lookup to buyer0 at time 1666182317.9788125
-Buyer buyer7 issues lookup to seller1 at time 1666182317.9803681
-Buyer buyer7 issues lookup to seller4 at time 1666182317.9826655
-1666182318.0037248 buyer7 picked seller3 to purchase fish
-1666182318.0160797 buyer7 got a match reply from seller8
-1666182318.016994 buyer7 got a match reply from seller8
-buyer7 purchase item salt from  seller3 at 1666182318.0467079
-seller3 now has 3 remaining for item salt
-1666182318.0520923 buyer7 bought fish from seller3
-Buyer buyer7 now picked item boar to buy at time 1666182318.0521243
-1666182318.0819216 buyer7 got a match reply from seller8
-Buyer buyer0 issues lookup to buyer2 at time 1666182318.117196
-Buyer buyer0 issues lookup to seller5 at time 1666182318.1185534
-Buyer buyer0 issues lookup to buyer7 at time 1666182318.1211185
-1666182318.1489825 buyer0 picked seller8 to purchase fish
-buyer0 purchase item fish from  seller8 at 1666182318.1984873
+1666184137.8131576 buyer0 failed to buy fish from seller8
+Buyer buyer0 now picked item salt to buy at time 1666184137.813188
+Buyer buyer2 issues lookup to buyer9 at time 1666184137.827616
+Buyer buyer2 issues lookup to seller8 at time 1666184137.8478615
+1666184137.8509288 buyer0 got a match reply from seller1
+Buyer buyer2 issues lookup to buyer3 at time 1666184137.8818486
+1666184137.9423647 buyer0 got a match reply from seller8
+1666184137.9743888 buyer0 got a match reply from seller1
+1666184137.9746227 buyer2 picked seller1 to purchase salt
+1666184137.9896104 buyer0 got a match reply from seller8
+1666184137.996765 buyer0 got a match reply from seller8
+1666184138.0116565 buyer0 got a match reply from seller8
+1666184138.014152 buyer0 got a match reply from seller1
+buyer2 purchase item fish from  seller1 at 1666184138.0193877
+seller1 now has 2 remaining for item fish
+1666184138.0221496 buyer2 bought salt from seller1
+Buyer buyer2 now picked item fish to buy at time 1666184138.022176
+1666184138.042517 buyer2 got a match reply from seller5
+1666184138.0521052 buyer2 got a match reply from seller5
+1666184138.0602124 buyer2 got a match reply from seller5
+1666184138.0771499 buyer2 got a match reply from seller5
+1666184138.0818264 buyer2 got a match reply from seller5
+1666184138.089552 buyer2 got a match reply from seller5
+1666184138.0978498 buyer2 got a match reply from seller5
+Buyer buyer3 issues lookup to seller1 at time 1666184138.1511943
+Buyer buyer3 issues lookup to buyer2 at time 1666184138.1528807
+Buyer buyer3 issues lookup to seller5 at time 1666184138.1570787
+1666184138.1734655 buyer3 picked seller6 to purchase boar
+buyer3 purchase item boar from  seller6 at 1666184138.200168
+seller6 now has 2 remaining for item boar
+1666184138.2031803 buyer3 bought boar from seller6
+Buyer buyer3 now picked item boar to buy at time 1666184138.2032104
+1666184138.2128754 buyer3 got a match reply from seller6
+1666184138.2527828 buyer3 got a match reply from seller6
+1666184138.3373287 buyer3 got a match reply from seller6
+1666184138.3605266 buyer3 got a match reply from seller6
+1666184138.4206612 buyer3 got a match reply from seller6
+1666184138.4654438 buyer3 got a match reply from seller6
+Buyer buyer9 issues lookup to buyer2 at time 1666184138.4830174
+Buyer buyer9 issues lookup to seller8 at time 1666184138.5043156
+1666184138.5334902 buyer9 picked seller6 to purchase salt
+buyer9 purchase item boar from  seller6 at 1666184138.567777
+seller6 now has 1 remaining for item boar
+1666184138.571142 buyer9 bought salt from seller6
+Buyer buyer9 now picked item fish to buy at time 1666184138.571178
+1666184138.5773168 buyer9 got a match reply from seller5
+1666184138.6437151 buyer9 got a match reply from seller5
+1666184138.6601374 buyer9 got a match reply from seller5
+1666184138.6609347 buyer9 got a match reply from seller5
+1666184138.6962674 buyer9 got a match reply from seller5
+1666184138.6981807 buyer9 got a match reply from seller5
+1666184138.730286 buyer9 got a match reply from seller5
+1666184138.7325304 buyer9 got a match reply from seller5
+1666184138.7398539 buyer9 got a match reply from seller5
+1666184138.748568 buyer9 got a match reply from seller5
+Buyer buyer0 issues lookup to seller7 at time 1666184138.814667
+Buyer buyer0 issues lookup to seller6 at time 1666184138.8166242
+Buyer buyer0 issues lookup to seller5 at time 1666184138.8185112
+1666184138.8392668 buyer0 picked seller1 to purchase salt
+1666184138.8427954 buyer0 got a match reply from seller5
+buyer0 purchase item fish from  seller1 at 1666184138.866546
+seller1 now has 1 remaining for item fish
+1666184138.8692176 buyer0 bought salt from seller1
+Buyer buyer0 now picked item fish to buy at time 1666184138.869247
+1666184138.878814 buyer0 got a match reply from seller5
+Buyer buyer2 issues lookup to buyer9 at time 1666184139.0235589
+Buyer buyer2 issues lookup to seller8 at time 1666184139.0251827
+Buyer buyer2 issues lookup to buyer3 at time 1666184139.0271065
+1666184139.0356867 buyer2 got a match reply from seller8
+1666184139.038323 buyer2 got a match reply from seller8
+1666184139.0408185 buyer2 picked seller5 to purchase fish
+1666184139.0435777 buyer2 got a match reply from seller1
+buyer2 purchase item salt from  seller5 at 1666184139.0563402
+seller5 now has 1 remaining for item salt
+1666184139.057506 buyer2 bought fish from seller5
+Buyer buyer2 now picked item salt to buy at time 1666184139.0575266
+1666184139.0639424 buyer2 got a match reply from seller7
+1666184139.0711925 buyer2 got a match reply from seller1
+1666184139.0759208 buyer2 got a match reply from seller8
+1666184139.1066628 buyer2 got a match reply from seller8
+1666184139.1086338 buyer2 got a match reply from seller8
+Buyer buyer3 issues lookup to seller1 at time 1666184139.204509
+Buyer buyer3 issues lookup to buyer2 at time 1666184139.2060406
+Buyer buyer3 issues lookup to seller5 at time 1666184139.2072556
+1666184139.2312398 buyer3 picked seller6 to purchase boar
+1666184139.269602 buyer3 got a match reply from seller6
+buyer3 purchase item boar from  seller6 at 1666184139.2812524
+seller6 now has 0 remaining for item boar
+1666184139.2849174 buyer3 bought boar from seller6
+Buyer buyer3 now picked item salt to buy at time 1666184139.28495
+1666184139.2983675 buyer3 got a match reply from seller6
+1666184139.378603 buyer3 got a match reply from seller6
+1666184139.4599094 buyer3 got a match reply from seller6
+1666184139.5080187 buyer3 got a match reply from seller6
+1666184139.5131392 buyer3 got a match reply from seller6
+Buyer buyer9 issues lookup to buyer2 at time 1666184139.5743203
+Buyer buyer9 issues lookup to seller8 at time 1666184139.5801363
+1666184139.626114 buyer9 picked seller5 to purchase fish
+1666184139.632243 buyer9 got a match reply from seller1
+1666184139.6374626 buyer9 got a match reply from seller8
+1666184139.638628 buyer9 got a match reply from seller8
+1666184139.6502285 buyer9 got a match reply from seller8
+buyer9 purchase item salt from  seller5 at 1666184139.6574848
+seller5 now has 0 remaining for item salt
+1666184139.6597226 buyer9 bought fish from seller5
+Buyer buyer9 now picked item fish to buy at time 1666184139.6597493
+1666184139.6695778 buyer9 got a match reply from seller1
+1666184139.6761327 buyer9 got a match reply from seller7
+1666184139.6821527 buyer9 got a match reply from seller8
+1666184139.6927686 buyer9 got a match reply from seller1
+Buyer buyer0 issues lookup to seller7 at time 1666184139.8708856
+Buyer buyer0 issues lookup to seller6 at time 1666184139.872714
+Buyer buyer0 issues lookup to seller5 at time 1666184139.8752115
+1666184139.882358 buyer0 got a match reply from seller7
+1666184139.8885322 buyer0 picked seller5 to purchase fish
+1666184139.9034767 buyer0 got a match reply from seller1
+1666184139.9057353 buyer0 got a match reply from seller8
+1666184139.9075599 buyer0 failed to buy fish from seller5
+Buyer buyer0 now picked item boar to buy at time 1666184139.9075863
+1666184139.9330046 buyer0 got a match reply from seller8
+1666184139.938026 buyer0 got a match reply from seller8
+1666184139.9410596 buyer0 got a match reply from seller1
+1666184139.9438975 buyer0 got a match reply from seller1
+1666184139.950201 buyer0 got a match reply from seller8
+1666184139.9564939 buyer0 got a match reply from seller5
+1666184139.9616365 buyer0 got a match reply from seller5
+Buyer buyer2 issues lookup to buyer9 at time 1666184140.0588944
+Buyer buyer2 issues lookup to seller8 at time 1666184140.0604212
+Buyer buyer2 issues lookup to buyer3 at time 1666184140.0625596
+1666184140.0884597 buyer2 picked seller8 to purchase salt
+buyer2 purchase item fish from  seller8 at 1666184140.143334
 seller8 now has 9 remaining for item fish
-1666182318.2082794 buyer0 bought fish from seller8
-Buyer buyer0 now picked item fish to buy at time 1666182318.2083042
-1666182318.2252872 buyer0 got a match reply from seller8
-1666182318.2270257 buyer0 got a match reply from seller8
-Buyer buyer2 issues lookup to buyer0 at time 1666182318.830725
-Buyer buyer2 issues lookup to seller6 at time 1666182318.8323088
-Buyer buyer2 issues lookup to seller3 at time 1666182318.8340535
-1666182318.8483212 buyer2 picked seller8 to purchase boar
-buyer2 purchase item fish from  seller8 at 1666182318.886333
+1666184140.153649 buyer2 bought salt from seller8
+Buyer buyer2 now picked item fish to buy at time 1666184140.1536732
+Buyer buyer3 issues lookup to seller1 at time 1666184140.287149
+Buyer buyer3 issues lookup to buyer2 at time 1666184140.2977545
+Buyer buyer3 issues lookup to seller5 at time 1666184140.3290374
+1666184140.406843 buyer3 picked seller6 to purchase salt
+1666184140.4718466 buyer3 failed to buy salt from seller6
+Buyer buyer3 now picked item fish to buy at time 1666184140.4718792
+Buyer buyer9 issues lookup to buyer2 at time 1666184140.6606393
+Buyer buyer9 issues lookup to seller8 at time 1666184140.6886554
+1666184140.7653925 buyer9 picked seller8 to purchase fish
+buyer9 purchase item fish from  seller8 at 1666184140.8320098
 seller8 now has 8 remaining for item fish
-1666182318.8936949 buyer2 bought boar from seller8
-Buyer buyer2 now picked item fish to buy at time 1666182318.8937225
-1666182318.9192836 buyer2 got a match reply from seller4
-Buyer buyer7 issues lookup to buyer0 at time 1666182319.0534601
-Buyer buyer7 issues lookup to seller1 at time 1666182319.0550847
-Buyer buyer7 issues lookup to seller4 at time 1666182319.058874
-1666182319.0822601 buyer7 picked seller8 to purchase boar
-1666182319.0847597 buyer7 got a match reply from seller4
-1666182319.1129646 buyer7 got a match reply from seller4
-buyer7 purchase item fish from  seller8 at 1666182319.1210759
+1666184140.8360004 buyer9 got a match reply from seller8
+1666184140.8361723 buyer9 bought fish from seller8
+Buyer buyer9 now picked item boar to buy at time 1666184140.8362007
+1666184140.8511856 buyer9 got a match reply from seller1
+1666184140.872164 buyer9 got a match reply from seller8
+1666184140.881304 buyer9 got a match reply from seller5
+1666184140.8914626 buyer9 got a match reply from seller1
+1666184140.911898 buyer9 got a match reply from seller5
+Buyer buyer0 issues lookup to seller7 at time 1666184140.915926
+1666184140.9226632 buyer9 got a match reply from seller8
+Buyer buyer0 issues lookup to seller6 at time 1666184140.9290698
+Buyer buyer0 issues lookup to seller5 at time 1666184140.9394448
+1666184140.9529438 buyer0 picked seller1 to purchase boar
+1666184140.9661138 buyer0 got a match reply from seller4
+buyer0 purchase item fish from  seller1 at 1666184140.9779387
+seller1 now has 0 remaining for item fish
+1666184140.9804566 buyer0 bought boar from seller1
+Buyer buyer0 now picked item boar to buy at time 1666184140.9804876
+Buyer buyer2 issues lookup to buyer9 at time 1666184141.1624928
+Buyer buyer2 issues lookup to seller8 at time 1666184141.1951368
+Buyer buyer2 issues lookup to buyer3 at time 1666184141.2131894
+Buyer buyer2 now picked item salt to buy at time 1666184141.2920504
+1666184141.3018045 buyer2 got a match reply from seller8
+1666184141.305504 buyer2 got a match reply from seller8
+1666184141.31016 buyer2 got a match reply from seller5
+1666184141.310988 buyer2 got a match reply from seller1
+Buyer buyer3 issues lookup to seller1 at time 1666184141.4733832
+Buyer buyer3 issues lookup to buyer2 at time 1666184141.4749136
+Buyer buyer3 issues lookup to seller5 at time 1666184141.4775214
+1666184141.4823525 buyer3 got a match reply from seller1
+1666184141.4952397 buyer3 got a match reply from seller5
+1666184141.4965177 buyer3 got a match reply from seller8
+1666184141.497584 buyer3 picked seller1 to purchase fish
+1666184141.50136 buyer3 got a match reply from seller8
+seller1 is now the seller of fish.
+1666184141.5098283 buyer3 failed to buy fish from seller1
+Buyer buyer3 now picked item salt to buy at time 1666184141.5098565
+1666184141.511359 buyer3 got a match reply from seller8
+1666184141.5139775 buyer3 got a match reply from seller8
+Buyer buyer9 issues lookup to buyer2 at time 1666184141.83782
+Buyer buyer9 issues lookup to seller8 at time 1666184141.839438
+1666184141.854407 buyer9 picked seller8 to purchase boar
+buyer9 purchase item fish from  seller8 at 1666184141.9193912
 seller8 now has 7 remaining for item fish
-1666182319.1228402 buyer7 bought boar from seller8
-Buyer buyer7 now picked item salt to buy at time 1666182319.122872
-Buyer buyer0 issues lookup to buyer2 at time 1666182319.2096725
-Buyer buyer0 issues lookup to seller5 at time 1666182319.2112083
-Buyer buyer0 issues lookup to buyer7 at time 1666182319.2141201
-1666182319.240495 buyer0 picked seller8 to purchase fish
-buyer0 purchase item fish from  seller8 at 1666182319.2856646
-seller8 now has 6 remaining for item fish
-1666182319.289287 buyer0 got a match reply from seller8
-1666182319.2907674 buyer0 bought fish from seller8
-Buyer buyer0 now picked item salt to buy at time 1666182319.2907922
-1666182319.3109202 buyer0 got a match reply from seller8
-Buyer buyer2 issues lookup to buyer0 at time 1666182319.89547
-Buyer buyer2 issues lookup to seller6 at time 1666182319.8971584
-Buyer buyer2 issues lookup to seller3 at time 1666182319.900601
-1666182319.9179716 buyer2 picked seller4 to purchase fish
-buyer2 purchase item boar from  seller4 at 1666182319.9813626
-seller4 now has 2 remaining for item boar
-1666182319.9921489 buyer2 bought fish from seller4
-Buyer buyer2 now picked item salt to buy at time 1666182319.9921732
-1666182319.994892 buyer2 got a match reply from seller8
-1666182319.9977052 buyer2 got a match reply from seller8
-Buyer buyer7 issues lookup to buyer0 at time 1666182320.124519
-Buyer buyer7 issues lookup to seller1 at time 1666182320.1260226
-Buyer buyer7 issues lookup to seller4 at time 1666182320.128998
-1666182320.1416311 buyer7 got a match reply from seller1
-1666182320.1497092 buyer7 got a match reply from seller5
-1666182320.1498623 buyer7 picked seller1 to purchase salt
-1666182320.1653163 buyer7 got a match reply from seller3
-1666182320.1665978 buyer7 got a match reply from seller6
-1666182320.170262 buyer7 got a match reply from seller1
-buyer7 purchase item salt from  seller1 at 1666182320.1725345
-seller1 now has 2 remaining for item salt
-1666182320.1740847 buyer7 got a match reply from seller5
-1666182320.1765037 buyer7 bought salt from seller1
-Buyer buyer7 now picked item fish to buy at time 1666182320.1765335
-1666182320.1786711 buyer7 got a match reply from seller9
-1666182320.1861324 buyer7 got a match reply from seller9
-Buyer buyer0 issues lookup to buyer2 at time 1666182320.2923317
-Buyer buyer0 issues lookup to seller5 at time 1666182320.2941198
-Buyer buyer0 issues lookup to buyer7 at time 1666182320.2960086
-1666182320.3064954 buyer0 got a match reply from seller5
-1666182320.3095143 buyer0 got a match reply from seller6
-1666182320.3151808 buyer0 got a match reply from seller3
-1666182320.3160589 buyer0 picked seller6 to purchase salt
-1666182320.3201635 buyer0 got a match reply from seller1
-buyer0 purchase item salt from  seller6 at 1666182320.3274782
-seller6 now has 3 remaining for item salt
-1666182320.3301167 buyer0 bought salt from seller6
-Buyer buyer0 now picked item boar to buy at time 1666182320.3301458
-1666182320.3434708 buyer0 got a match reply from seller9
-1666182320.3446283 buyer0 got a match reply from seller1
-1666182320.3480642 buyer0 got a match reply from seller1
-Buyer buyer2 issues lookup to buyer0 at time 1666182320.9937878
-Buyer buyer2 issues lookup to seller6 at time 1666182320.9953732
-Buyer buyer2 issues lookup to seller3 at time 1666182320.9972959
-1666182321.0070624 buyer2 got a match reply from seller6
-1666182321.0125942 buyer2 picked seller8 to purchase salt
-1666182321.0157852 buyer2 got a match reply from seller5
-1666182321.016446 buyer2 got a match reply from seller3
-buyer2 purchase item fish from  seller8 at 1666182321.02742
-seller8 now has 5 remaining for item fish
-1666182321.0277922 buyer2 got a match reply from seller1
-1666182321.0289311 buyer2 bought salt from seller8
-Buyer buyer2 now picked item fish to buy at time 1666182321.0289598
-1666182321.0369277 buyer2 got a match reply from seller5
-1666182321.0499148 buyer2 got a match reply from seller9
-Buyer buyer7 issues lookup to buyer0 at time 1666182321.1778495
-Buyer buyer7 issues lookup to seller1 at time 1666182321.1792228
-Buyer buyer7 issues lookup to seller4 at time 1666182321.1815653
-1666182321.2018507 buyer7 got a match reply from seller8
-1666182321.2030525 buyer7 picked seller9 to purchase fish
-1666182321.2186267 buyer7 got a match reply from seller8
-buyer7 purchase item salt from  seller9 at 1666182321.2419384
-seller9 now has 1 remaining for item salt
-1666182321.2442887 buyer7 bought fish from seller9
-Buyer buyer7 now picked item boar to buy at time 1666182321.2443178
-1666182321.272757 buyer7 got a match reply from seller8
-Buyer buyer0 issues lookup to buyer2 at time 1666182321.3310864
-Buyer buyer0 issues lookup to seller5 at time 1666182321.3328948
-Buyer buyer0 issues lookup to buyer7 at time 1666182321.3345296
-1666182321.3543668 buyer0 picked seller1 to purchase boar
-buyer0 purchase item salt from  seller1 at 1666182321.3717608
-seller1 now has 1 remaining for item salt
-1666182321.3735816 buyer0 bought boar from seller1
-Buyer buyer0 now picked item fish to buy at time 1666182321.3736084
-1666182321.3771577 buyer0 got a match reply from seller4
-1666182321.4390905 buyer0 got a match reply from seller4
-1666182321.4526381 buyer0 got a match reply from seller4
-Buyer buyer2 issues lookup to buyer0 at time 1666182322.030608
-Buyer buyer2 issues lookup to seller6 at time 1666182322.0323038
-Buyer buyer2 issues lookup to seller3 at time 1666182322.0344913
-1666182322.054639 buyer2 picked seller1 to purchase fish
-buyer2 purchase item salt from  seller1 at 1666182322.086526
-seller1 now has 0 remaining for item salt
-1666182322.0902321 buyer2 bought fish from seller1
-Buyer buyer2 now picked item fish to buy at time 1666182322.0902607
-1666182322.1389203 buyer2 got a match reply from seller8
-1666182322.1632645 buyer2 got a match reply from seller8
-Buyer buyer7 issues lookup to buyer0 at time 1666182322.2459142
-Buyer buyer7 issues lookup to seller1 at time 1666182322.24744
-Buyer buyer7 issues lookup to seller4 at time 1666182322.2521875
-1666182322.2724886 buyer7 picked seller8 to purchase boar
-1666182322.2801294 buyer7 got a match reply from seller4
-buyer7 purchase item fish from  seller8 at 1666182322.3150585
-seller8 now has 4 remaining for item fish
-1666182322.31754 buyer7 got a match reply from seller4
-1666182322.3188217 buyer7 bought boar from seller8
-Buyer buyer7 now picked item salt to buy at time 1666182322.3188484
-Buyer buyer0 issues lookup to buyer2 at time 1666182322.37488
-Buyer buyer0 issues lookup to seller5 at time 1666182322.3764324
-Buyer buyer0 issues lookup to buyer7 at time 1666182322.3791144
-1666182322.3956735 buyer0 picked seller4 to purchase fish
-buyer0 purchase item boar from  seller4 at 1666182322.4305465
-seller4 now has 1 remaining for item boar
-1666182322.4403992 buyer0 bought fish from seller4
-Buyer buyer0 now picked item boar to buy at time 1666182322.4404302
-1666182322.4643512 buyer0 got a match reply from seller8
-1666182322.4673266 buyer0 got a match reply from seller8
-Buyer buyer2 issues lookup to buyer0 at time 1666182323.0918038
-Buyer buyer2 issues lookup to seller6 at time 1666182323.0934746
-Buyer buyer2 issues lookup to seller3 at time 1666182323.0955744
-1666182323.1107655 buyer2 picked seller8 to purchase fish
-buyer2 purchase item fish from  seller8 at 1666182323.1383922
-seller8 now has 3 remaining for item fish
-1666182323.1472015 buyer2 bought fish from seller8
-Buyer buyer2 now picked item boar to buy at time 1666182323.147235
-1666182323.2049022 buyer2 got a match reply from seller8
-1666182323.2113252 buyer2 got a match reply from seller8
-Buyer buyer7 issues lookup to buyer0 at time 1666182323.3201706
-Buyer buyer7 issues lookup to seller1 at time 1666182323.321852
-Buyer buyer7 issues lookup to seller4 at time 1666182323.3243477
-1666182323.339332 buyer7 got a match reply from seller1
-1666182323.3443744 buyer7 picked seller4 to purchase salt
-1666182323.3577516 buyer7 got a match reply from seller5
-1666182323.360824 buyer7 got a match reply from seller6
-1666182323.3650243 buyer7 got a match reply from seller9
-1666182323.3685396 buyer7 got a match reply from seller3
-1666182323.3699534 buyer7 got a match reply from seller5
-1666182323.3717916 buyer7 got a match reply from seller1
-buyer7 purchase item boar from  seller4 at 1666182323.3723412
-seller4 now has 0 remaining for item boar
-1666182323.3734841 buyer7 bought salt from seller4
-Buyer buyer7 now picked item salt to buy at time 1666182323.3735073
-1666182323.3820524 buyer7 got a match reply from seller9
-Buyer buyer0 issues lookup to buyer2 at time 1666182323.4420311
-Buyer buyer0 issues lookup to seller5 at time 1666182323.4435706
-Buyer buyer0 issues lookup to buyer7 at time 1666182323.4466474
-1666182323.4709475 buyer0 picked seller8 to purchase boar
-buyer0 purchase item fish from  seller8 at 1666182323.500875
-seller8 now has 2 remaining for item fish
-1666182323.5048392 buyer0 got a match reply from seller4
-1666182323.5053914 buyer0 bought boar from seller8
-Buyer buyer0 now picked item fish to buy at time 1666182323.5054226
-1666182323.5471325 buyer0 got a match reply from seller4
-1666182323.5671136 buyer0 got a match reply from seller4
-Buyer buyer2 issues lookup to buyer0 at time 1666182324.14898
-Buyer buyer2 issues lookup to seller6 at time 1666182324.1504028
-Buyer buyer2 issues lookup to seller3 at time 1666182324.1522765
-1666182324.1709085 buyer2 picked seller8 to purchase boar
-buyer2 purchase item fish from  seller8 at 1666182324.2049072
-seller8 now has 1 remaining for item fish
-1666182324.2088037 buyer2 bought boar from seller8
-Buyer buyer2 now picked item boar to buy at time 1666182324.2088351
-1666182324.276273 buyer2 got a match reply from seller4
-Buyer buyer7 issues lookup to buyer0 at time 1666182324.374916
-Buyer buyer7 issues lookup to seller1 at time 1666182324.3763657
-Buyer buyer7 issues lookup to seller4 at time 1666182324.3784919
-1666182324.392031 buyer7 got a match reply from seller1
-1666182324.402327 buyer7 picked seller6 to purchase salt
-1666182324.4036798 buyer7 got a match reply from seller5
-1666182324.4145138 buyer7 got a match reply from seller6
-1666182324.4201617 buyer7 got a match reply from seller1
-1666182324.4204898 buyer7 got a match reply from seller9
-1666182324.4222338 buyer7 got a match reply from seller3
-1666182324.423828 buyer7 got a match reply from seller5
-buyer7 purchase item salt from  seller6 at 1666182324.4271765
-seller6 now has 2 remaining for item salt
-1666182324.428635 buyer7 bought salt from seller6
-Buyer buyer7 now picked item salt to buy at time 1666182324.4286568
-1666182324.4358394 buyer7 got a match reply from seller9
-Buyer buyer0 issues lookup to buyer2 at time 1666182324.5069644
-Buyer buyer0 issues lookup to seller5 at time 1666182324.5087123
-Buyer buyer0 issues lookup to buyer7 at time 1666182324.5108864
-1666182324.529624 buyer0 picked seller4 to purchase fish
-1666182324.5660822 buyer0 failed to buy fish from seller4
-Buyer buyer0 now picked item boar to buy at time 1666182324.5661085
-1666182324.581758 buyer0 got a match reply from seller8
-1666182324.5900626 buyer0 got a match reply from seller8
-1666182324.6043315 buyer0 got a match reply from seller4
-1666182324.6456637 buyer0 got a match reply from seller4
-1666182324.6644335 buyer0 got a match reply from seller4
-Buyer buyer2 issues lookup to buyer0 at time 1666182325.2105157
-Buyer buyer2 issues lookup to seller6 at time 1666182325.2121596
-Buyer buyer2 issues lookup to seller3 at time 1666182325.214155
-1666182325.2280333 buyer2 picked seller4 to purchase boar
-1666182325.2641337 buyer2 failed to buy boar from seller4
-Buyer buyer2 now picked item salt to buy at time 1666182325.2641704
-1666182325.322095 buyer2 got a match reply from seller4
-Buyer buyer7 issues lookup to buyer0 at time 1666182325.430024
-Buyer buyer7 issues lookup to seller1 at time 1666182325.4316168
-Buyer buyer7 issues lookup to seller4 at time 1666182325.4338872
-1666182325.4471846 buyer7 got a match reply from seller1
-1666182325.451347 buyer7 picked seller6 to purchase salt
-1666182325.4662216 buyer7 got a match reply from seller5
-buyer7 purchase item salt from  seller6 at 1666182325.4736342
-seller6 now has 1 remaining for item salt
-1666182325.474766 buyer7 got a match reply from seller9
-1666182325.4748673 buyer7 bought salt from seller6
-Buyer buyer7 now picked item salt to buy at time 1666182325.4748943
-1666182325.479661 buyer7 got a match reply from seller5
-1666182325.4825265 buyer7 got a match reply from seller1
-1666182325.484174 buyer7 got a match reply from seller6
-1666182325.4881327 buyer7 got a match reply from seller3
-1666182325.4909046 buyer7 got a match reply from seller9
-Buyer buyer0 issues lookup to buyer2 at time 1666182325.5679579
-Buyer buyer0 issues lookup to seller5 at time 1666182325.5697856
-Buyer buyer0 issues lookup to buyer7 at time 1666182325.5716474
-1666182325.5999358 buyer0 picked seller8 to purchase boar
-1666182325.6369631 buyer0 got a match reply from seller4
-buyer0 purchase item fish from  seller8 at 1666182325.6565778
-seller8 now has 0 remaining for item fish
-1666182325.6630743 buyer0 bought boar from seller8
-Buyer buyer0 now picked item boar to buy at time 1666182325.6631048
-1666182325.6718402 buyer0 got a match reply from seller4
-1666182325.6806288 buyer0 got a match reply from seller4
-Buyer buyer2 issues lookup to buyer0 at time 1666182326.2655644
-Buyer buyer2 issues lookup to seller6 at time 1666182326.2671902
-Buyer buyer2 issues lookup to seller3 at time 1666182326.2692518
-1666182326.2816188 buyer2 got a match reply from seller6
-1666182326.285668 buyer2 got a match reply from seller3
-1666182326.2864614 buyer2 got a match reply from seller5
-1666182326.28765 buyer2 picked seller6 to purchase salt
-buyer2 purchase item salt from  seller6 at 1666182326.3013835
-seller6 now has 0 remaining for item salt
-1666182326.3035562 buyer2 bought salt from seller6
-Buyer buyer2 now picked item boar to buy at time 1666182326.303576
-1666182326.3065875 buyer2 got a match reply from seller5
-1666182326.3083303 buyer2 got a match reply from seller1
-1666182326.323504 buyer2 got a match reply from seller9
-Buyer buyer7 issues lookup to buyer0 at time 1666182326.4764216
-Buyer buyer7 issues lookup to seller1 at time 1666182326.4779606
-Buyer buyer7 issues lookup to seller4 at time 1666182326.4798973
-1666182326.4965355 buyer7 got a match reply from seller1
-1666182326.497976 buyer7 picked seller9 to purchase salt
-1666182326.5091834 buyer7 got a match reply from seller5
-1666182326.513448 buyer7 got a match reply from seller1
-1666182326.514729 buyer7 got a match reply from seller9
-buyer7 purchase item salt from  seller9 at 1666182326.521103
-seller9 now has 0 remaining for item salt
-1666182326.5239284 buyer7 bought salt from seller9
-Buyer buyer7 now picked item salt to buy at time 1666182326.5239594
-1666182326.5282948 buyer7 got a match reply from seller6
-1666182326.5310085 buyer7 got a match reply from seller5
-1666182326.536078 buyer7 got a match reply from seller3
-1666182326.538026 buyer7 got a match reply from seller9
-Buyer buyer0 issues lookup to buyer2 at time 1666182326.6646404
-Buyer buyer0 issues lookup to seller5 at time 1666182326.6662083
-Buyer buyer0 issues lookup to buyer7 at time 1666182326.6688986
-1666182326.6978357 buyer0 picked seller4 to purchase boar
-1666182326.728574 buyer0 got a match reply from seller4
-1666182326.765195 buyer0 failed to buy boar from seller4
-Buyer buyer0 now picked item boar to buy at time 1666182326.765228
-1666182326.7718344 buyer0 got a match reply from seller4
-1666182326.8011658 buyer0 got a match reply from seller4
-Buyer buyer2 issues lookup to buyer0 at time 1666182327.3052123
-Buyer buyer2 issues lookup to seller6 at time 1666182327.3069117
-Buyer buyer2 issues lookup to seller3 at time 1666182327.3099709
-1666182327.326769 buyer2 picked seller9 to purchase boar
-seller9 is now the seller of salt.
-1666182327.3882937 buyer2 failed to buy boar from seller9
-Buyer buyer2 now picked item salt to buy at time 1666182327.3883195
-Buyer buyer7 issues lookup to buyer0 at time 1666182327.5254948
-Buyer buyer7 issues lookup to seller1 at time 1666182327.5272512
-Buyer buyer7 issues lookup to seller4 at time 1666182327.53033
-1666182327.5460627 buyer7 got a match reply from seller1
-1666182327.5529103 buyer7 got a match reply from seller4
-1666182327.5537682 buyer7 picked seller9 to purchase salt
-1666182327.5600095 buyer7 got a match reply from seller5
-1666182327.5619254 buyer7 got a match reply from seller6
-1666182327.562253 buyer7 got a match reply from seller5
-1666182327.5639093 buyer7 got a match reply from seller3
-buyer7 purchase item salt from  seller9 at 1666182327.5676763
-seller9 now has 9 remaining for item salt
-1666182327.5679164 buyer7 bought salt from seller9
-Buyer buyer7 now picked item boar to buy at time 1666182327.567938
-Buyer buyer0 issues lookup to buyer2 at time 1666182327.7669175
-Buyer buyer0 issues lookup to seller5 at time 1666182327.7682905
-Buyer buyer0 issues lookup to buyer7 at time 1666182327.7713234
-1666182327.7897797 buyer0 picked seller4 to purchase boar
-seller4 is now the seller of salt.
-1666182327.848786 buyer0 failed to buy boar from seller4
-Buyer buyer0 now picked item boar to buy at time 1666182327.8488119
-Buyer buyer2 issues lookup to buyer0 at time 1666182328.3898513
-Buyer buyer2 issues lookup to seller6 at time 1666182328.3913326
-Buyer buyer2 issues lookup to seller3 at time 1666182328.393523
-1666182328.4044428 buyer2 got a match reply from seller6
-1666182328.4056623 buyer2 got a match reply from seller5
-1666182328.4116588 buyer2 got a match reply from seller3
-1666182328.4124608 buyer2 picked seller6 to purchase salt
-1666182328.4226248 buyer2 got a match reply from seller1
-1666182328.424331 buyer2 got a match reply from seller5
-seller6 is now the seller of salt.
-1666182328.4268267 buyer2 failed to buy salt from seller6
-Buyer buyer2 now picked item fish to buy at time 1666182328.4268475
-1666182328.4326835 buyer2 got a match reply from seller4
-Buyer buyer7 issues lookup to buyer0 at time 1666182328.5694568
-Buyer buyer7 issues lookup to seller1 at time 1666182328.5710332
-Buyer buyer7 issues lookup to seller4 at time 1666182328.5731604
-1666182328.5974119 buyer7 picked seller5 to purchase boar
+1666184141.9228601 buyer9 bought boar from seller8
+Buyer buyer9 now picked item boar to buy at time 1666184141.9228916
+Buyer buyer0 issues lookup to seller7 at time 1666184141.994635
+Buyer buyer0 issues lookup to seller6 at time 1666184142.0111644
+Buyer buyer0 issues lookup to seller5 at time 1666184142.0442567
+1666184142.1263134 buyer9 got a match reply from seller4
+1666184142.2081048 buyer0 picked seller4 to purchase boar
+1666184142.2212884 buyer0 got a match reply from seller4
+buyer0 purchase item boar from  seller4 at 1666184142.2582264
+seller4 now has 4 remaining for item boar
+1666184142.2662241 buyer0 bought boar from seller4
+Buyer buyer0 now picked item salt to buy at time 1666184142.2662501
+Buyer buyer2 issues lookup to buyer9 at time 1666184142.2992136
+Buyer buyer2 issues lookup to seller8 at time 1666184142.3167572
+Buyer buyer2 issues lookup to buyer3 at time 1666184142.3453023
+1666184142.4782248 buyer2 picked seller5 to purchase salt
+Buyer buyer3 issues lookup to seller1 at time 1666184142.5214298
+Buyer buyer3 issues lookup to buyer2 at time 1666184142.5349019
+Buyer buyer3 issues lookup to seller5 at time 1666184142.5635798
 Something went wrong in buy with error list index out of range
-1666182328.6520352 buyer7 failed to buy boar from seller5
-Buyer buyer7 now picked item salt to buy at time 1666182328.6520662
-Buyer buyer0 issues lookup to buyer2 at time 1666182328.8505385
-Buyer buyer0 issues lookup to seller5 at time 1666182328.8521001
-Buyer buyer0 issues lookup to buyer7 at time 1666182328.8542325
-Buyer buyer0 now picked item fish to buy at time 1666182328.8879907
-Buyer buyer2 issues lookup to buyer0 at time 1666182329.4284482
-Buyer buyer2 issues lookup to seller6 at time 1666182329.4300544
-Buyer buyer2 issues lookup to seller3 at time 1666182329.4319775
-1666182329.454641 buyer2 picked seller4 to purchase fish
-buyer2 purchase item salt from  seller4 at 1666182329.488735
-seller4 now has 9 remaining for item salt
-1666182329.4979227 buyer2 bought fish from seller4
-Buyer buyer2 now picked item fish to buy at time 1666182329.4979527
-1666182329.548921 buyer2 got a match reply from seller8
-1666182329.5614388 buyer2 got a match reply from seller8
-Buyer buyer7 issues lookup to buyer0 at time 1666182329.653586
-Buyer buyer7 issues lookup to seller1 at time 1666182329.6552207
-Buyer buyer7 issues lookup to seller4 at time 1666182329.6569273
-1666182329.670864 buyer7 got a match reply from seller1
-1666182329.6756184 buyer7 got a match reply from seller4
-1666182329.6776426 buyer7 picked seller4 to purchase salt
-1666182329.6885386 buyer7 got a match reply from seller5
-1666182329.6887805 buyer7 got a match reply from seller6
-1666182329.6929579 buyer7 got a match reply from seller3
-buyer7 purchase item salt from  seller4 at 1666182329.693967
-seller4 now has 8 remaining for item salt
-1666182329.6960926 buyer7 bought salt from seller4
-Buyer buyer7 now picked item salt to buy at time 1666182329.6961222
-1666182329.6968496 buyer7 got a match reply from seller5
-Buyer buyer0 issues lookup to buyer2 at time 1666182329.8895075
-Buyer buyer0 issues lookup to seller5 at time 1666182329.8911448
-Buyer buyer0 issues lookup to buyer7 at time 1666182329.8948631
-Buyer buyer0 now picked item fish to buy at time 1666182329.9277413
-1666182329.9729784 buyer0 got a match reply from seller8
-1666182329.9817903 buyer0 got a match reply from seller8
-Buyer buyer2 issues lookup to buyer0 at time 1666182330.4995618
-Buyer buyer2 issues lookup to seller6 at time 1666182330.5011764
-Buyer buyer2 issues lookup to seller3 at time 1666182330.5038912
-1666182330.5248857 buyer2 picked seller8 to purchase fish
-seller8 is now the seller of fish.
-1666182330.5755687 buyer2 failed to buy fish from seller8
-Buyer buyer2 now picked item salt to buy at time 1666182330.5755947
-1666182330.6020672 buyer2 got a match reply from seller8
-1666182330.6084511 buyer2 got a match reply from seller8
-Buyer buyer7 issues lookup to buyer0 at time 1666182330.6976569
-Buyer buyer7 issues lookup to seller1 at time 1666182330.6993825
-Buyer buyer7 issues lookup to seller4 at time 1666182330.7018266
-1666182330.718642 buyer7 got a match reply from seller1
-1666182330.7232163 buyer7 picked seller5 to purchase salt
-1666182330.7237809 buyer7 got a match reply from seller4
-1666182330.7241442 buyer7 got a match reply from seller5
-1666182330.728758 buyer7 got a match reply from seller6
-1666182330.7319918 buyer7 got a match reply from seller3
-1666182330.7377782 buyer7 failed to buy salt from seller5
-Buyer buyer7 now picked item fish to buy at time 1666182330.7378016
-1666182330.7399764 buyer7 got a match reply from seller5
-Buyer buyer0 issues lookup to buyer2 at time 1666182330.929292
-Buyer buyer0 issues lookup to seller5 at time 1666182330.9308875
-Buyer buyer0 issues lookup to buyer7 at time 1666182330.9331138
-1666182330.9448564 buyer0 got a match reply from seller5
-1666182330.9516604 buyer0 picked seller8 to purchase fish
-buyer0 purchase item fish from  seller8 at 1666182330.976449
-seller8 now has 9 remaining for item fish
-1666182330.9836628 buyer0 bought fish from seller8
-Buyer buyer0 now picked item boar to buy at time 1666182330.9836934
-1666182330.9944947 buyer0 got a match reply from seller5
-1666182330.9978306 buyer0 got a match reply from seller8
-1666182331.002231 buyer0 got a match reply from seller8
-1666182331.0559108 buyer0 got a match reply from seller5
-Buyer buyer2 issues lookup to buyer0 at time 1666182331.5772583
-Buyer buyer2 issues lookup to seller6 at time 1666182331.5789692
-Buyer buyer2 issues lookup to seller3 at time 1666182331.5808284
-1666182331.5918546 buyer2 got a match reply from seller6
-1666182331.59769 buyer2 got a match reply from seller3
-1666182331.598407 buyer2 picked seller3 to purchase salt
-1666182331.619399 buyer2 got a match reply from seller6
-buyer2 purchase item salt from  seller3 at 1666182331.6212907
-seller3 now has 2 remaining for item salt
-1666182331.6221585 buyer2 bought salt from seller3
-Buyer buyer2 now picked item boar to buy at time 1666182331.6221833
-1666182331.6293144 buyer2 got a match reply from seller4
-1666182331.6308804 buyer2 got a match reply from seller1
-Buyer buyer7 issues lookup to buyer0 at time 1666182331.7393346
-Buyer buyer7 issues lookup to seller1 at time 1666182331.7411542
-Buyer buyer7 issues lookup to seller4 at time 1666182331.743395
-1666182331.7656174 buyer7 picked seller4 to purchase fish
-1666182331.7671142 buyer7 got a match reply from seller5
-1666182331.7674005 buyer7 got a match reply from seller8
-1666182331.784357 buyer7 got a match reply from seller8
-1666182331.793853 buyer7 got a match reply from seller5
-buyer7 purchase item salt from  seller4 at 1666182331.7992976
-seller4 now has 7 remaining for item salt
-1666182331.8028266 buyer7 bought fish from seller4
-Buyer buyer7 now picked item salt to buy at time 1666182331.8028588
-1666182331.815096 buyer7 got a match reply from seller8
-1666182331.8185587 buyer7 got a match reply from seller5
-Buyer buyer0 issues lookup to buyer2 at time 1666182331.9879744
-Buyer buyer0 issues lookup to seller5 at time 1666182331.989465
-Buyer buyer0 issues lookup to buyer7 at time 1666182331.9913254
-1666182332.0168765 buyer0 picked seller5 to purchase boar
-seller5 is now the seller of fish.
-1666182332.0670557 buyer0 failed to buy boar from seller5
-Buyer buyer0 now picked item fish to buy at time 1666182332.0670855
-Buyer buyer2 issues lookup to buyer0 at time 1666182332.623549
-Buyer buyer2 issues lookup to seller6 at time 1666182332.6250367
-Buyer buyer2 issues lookup to seller3 at time 1666182332.6282148
-1666182332.644876 buyer2 picked seller4 to purchase boar
-buyer2 purchase item salt from  seller4 at 1666182332.7005687
-seller4 now has 6 remaining for item salt
-1666182332.712076 buyer2 bought boar from seller4
-Buyer buyer2 now picked item fish to buy at time 1666182332.7121089
-Buyer buyer7 issues lookup to buyer0 at time 1666182332.8041906
-Buyer buyer7 issues lookup to seller1 at time 1666182332.8057904
-Buyer buyer7 issues lookup to seller4 at time 1666182332.8088198
-1666182332.8253174 buyer7 got a match reply from seller1
-1666182332.8332396 buyer7 got a match reply from seller4
-1666182332.8372002 buyer7 picked seller4 to purchase salt
-1666182332.8411307 buyer7 got a match reply from seller6
-1666182332.8489962 buyer7 got a match reply from seller6
-1666182332.85632 buyer7 got a match reply from seller3
-buyer7 purchase item salt from  seller4 at 1666182332.8602638
-seller4 now has 5 remaining for item salt
-1666182332.8612735 buyer7 bought salt from seller4
-Buyer buyer7 now picked item fish to buy at time 1666182332.8613057
-Buyer buyer0 issues lookup to buyer2 at time 1666182333.068604
-Buyer buyer0 issues lookup to seller5 at time 1666182333.0704694
-Buyer buyer0 issues lookup to buyer7 at time 1666182333.0723927
-1666182333.0829046 buyer0 got a match reply from seller5
-1666182333.0880313 buyer0 picked seller5 to purchase fish
-buyer0 purchase item fish from  seller5 at 1666182333.1168897
-seller5 now has 9 remaining for item fish
-1666182333.118345 buyer0 bought fish from seller5
-Buyer buyer0 now picked item salt to buy at time 1666182333.118377
-1666182333.1470513 buyer0 got a match reply from seller5
-1666182333.153465 buyer0 got a match reply from seller8
-1666182333.155282 buyer0 got a match reply from seller8
-1666182333.1964068 buyer0 got a match reply from seller5
-Buyer buyer2 issues lookup to buyer0 at time 1666182333.7134438
-Buyer buyer2 issues lookup to seller6 at time 1666182333.7150288
-Buyer buyer2 issues lookup to seller3 at time 1666182333.7170353
-Buyer buyer2 now picked item salt to buy at time 1666182333.736673
-1666182333.7369628 buyer2 got a match reply from seller5
-1666182333.7449672 buyer2 got a match reply from seller5
-1666182333.7598703 buyer2 got a match reply from seller5
-1666182333.7705433 buyer2 got a match reply from seller5
-1666182333.780917 buyer2 got a match reply from seller5
-1666182333.7856014 buyer2 got a match reply from seller8
-1666182333.793465 buyer2 got a match reply from seller8
-Buyer buyer7 issues lookup to buyer0 at time 1666182333.8627212
-Buyer buyer7 issues lookup to seller1 at time 1666182333.8644478
-Buyer buyer7 issues lookup to seller4 at time 1666182333.8662305
-1666182333.8927345 buyer7 picked seller6 to purchase fish
-1666182333.8939214 buyer7 got a match reply from seller5
-1666182333.8956413 buyer7 got a match reply from seller8
-1666182333.9039342 buyer7 got a match reply from seller8
-1666182333.9265509 buyer7 got a match reply from seller5
-buyer7 purchase item salt from  seller6 at 1666182333.9306343
-seller6 now has 9 remaining for item salt
-1666182333.9324944 buyer7 bought fish from seller6
-Buyer buyer7 now picked item salt to buy at time 1666182333.9325225
-1666182333.94231 buyer7 got a match reply from seller5
-1666182333.9457624 buyer7 got a match reply from seller8
-Buyer buyer0 issues lookup to buyer2 at time 1666182334.1188433
-Buyer buyer0 issues lookup to seller5 at time 1666182334.1204464
-Buyer buyer0 issues lookup to buyer7 at time 1666182334.1234052
-1666182334.138833 buyer0 got a match reply from seller6
-1666182334.1393175 buyer0 picked seller5 to purchase salt
-1666182334.1407418 buyer0 got a match reply from seller6
-1666182334.1444206 buyer0 got a match reply from seller3
-1666182334.1469536 buyer0 got a match reply from seller4
-buyer0 purchase item fish from  seller5 at 1666182334.1491566
-seller5 now has 8 remaining for item fish
-1666182334.1497123 buyer0 bought salt from seller5
-Buyer buyer0 now picked item boar to buy at time 1666182334.1497428
-1666182334.150217 buyer0 got a match reply from seller1
-Buyer buyer2 issues lookup to buyer0 at time 1666182334.7382207
+1666184142.6458347 buyer2 failed to buy salt from seller5
+Buyer buyer2 now picked item boar to buy at time 1666184142.6458657
+1666184142.9036613 buyer3 picked seller8 to purchase salt
+Buyer buyer9 issues lookup to buyer2 at time 1666184142.9434848
+Buyer buyer9 issues lookup to seller8 at time 1666184142.9722211
+1666184143.0996761 buyer9 picked seller4 to purchase boar
+buyer3 purchase item fish from  seller8 at 1666184143.1048207
+seller8 now has 6 remaining for item fish
+1666184143.1124558 buyer3 bought salt from seller8
+Buyer buyer3 now picked item salt to buy at time 1666184143.1124885
+buyer9 purchase item boar from  seller4 at 1666184143.2144933
+seller4 now has 3 remaining for item boar
+1666184143.2191062 buyer9 bought boar from seller4
+Buyer buyer9 now picked item boar to buy at time 1666184143.219135
+Buyer buyer0 issues lookup to seller7 at time 1666184143.2837064
+Buyer buyer0 issues lookup to seller6 at time 1666184143.327542
+Buyer buyer0 issues lookup to seller5 at time 1666184143.3580763
+1666184143.4446173 buyer0 picked seller4 to purchase salt
+buyer0 purchase item boar from  seller4 at 1666184143.5259314
+seller4 now has 2 remaining for item boar
+1666184143.542071 buyer0 bought salt from seller4
+Buyer buyer0 now picked item salt to buy at time 1666184143.542103
+Buyer buyer2 issues lookup to buyer9 at time 1666184143.6518629
+Buyer buyer2 issues lookup to seller8 at time 1666184143.6619172
+Buyer buyer2 issues lookup to buyer3 at time 1666184143.6828098
+Buyer buyer2 now picked item fish to buy at time 1666184143.7535245
+1666184143.9038599 buyer9 got a match reply from seller4
+Buyer buyer3 issues lookup to seller1 at time 1666184144.1150606
+Buyer buyer3 issues lookup to buyer2 at time 1666184144.1449742
+Buyer buyer3 issues lookup to seller5 at time 1666184144.160044
+Buyer buyer9 issues lookup to buyer2 at time 1666184144.2282825
+Buyer buyer9 issues lookup to seller8 at time 1666184144.246757
+Buyer buyer3 now picked item fish to buy at time 1666184144.266005
+1666184144.3690755 buyer9 picked seller4 to purchase boar
+1666184144.405724 buyer2 got a match reply from seller4
+buyer9 purchase item boar from  seller4 at 1666184144.4453332
+seller4 now has 1 remaining for item boar
+1666184144.458728 buyer9 bought boar from seller4
+Buyer buyer9 now picked item salt to buy at time 1666184144.4587572
+Buyer buyer0 issues lookup to seller7 at time 1666184144.552003
+Buyer buyer0 issues lookup to seller6 at time 1666184144.5779495
+Buyer buyer0 issues lookup to seller5 at time 1666184144.5952644
+1666184144.6560614 buyer2 got a match reply from seller4
+Buyer buyer0 now picked item fish to buy at time 1666184144.7487414
+Buyer buyer2 issues lookup to buyer9 at time 1666184144.7712991
+Buyer buyer2 issues lookup to seller8 at time 1666184144.7875996
+Buyer buyer2 issues lookup to buyer3 at time 1666184144.8104975
+1666184144.9572694 buyer2 picked seller4 to purchase fish
+buyer2 purchase item boar from  seller4 at 1666184145.0558093
+seller4 now has 0 remaining for item boar
+1666184145.0604916 buyer2 bought fish from seller4
+Buyer buyer2 now picked item fish to buy at time 1666184145.0605235
+1666184145.1356504 buyer2 got a match reply from seller1
+1666184145.25241 buyer2 got a match reply from seller8
+1666184145.253566 buyer2 got a match reply from seller8
+Buyer buyer3 issues lookup to seller1 at time 1666184145.2692475
+Buyer buyer3 issues lookup to buyer2 at time 1666184145.292861
+Buyer buyer3 issues lookup to seller5 at time 1666184145.318248
+1666184145.3378773 buyer3 got a match reply from seller1
+1666184145.4188962 buyer3 picked seller1 to purchase fish
+Buyer buyer9 issues lookup to buyer2 at time 1666184145.4651766
+1666184145.4717042 buyer9 got a match reply from seller4
+Buyer buyer9 issues lookup to seller8 at time 1666184145.4998052
+Something went wrong in lookup with exception connection to ('localhost', 41485) rejected: no free workers, increase server threadpool size
+buyer3 purchase item fish from  seller1 at 1666184145.54482
+seller1 now has 9 remaining for item fish
+1666184145.553144 buyer3 bought fish from seller1
+Buyer buyer3 now picked item salt to buy at time 1666184145.553174
+1666184145.5919697 buyer9 picked seller4 to purchase salt
+1666184145.6238995 buyer3 got a match reply from seller8
+1666184145.6353831 buyer3 got a match reply from seller8
+1666184145.6645253 buyer3 got a match reply from seller8
+seller4 is now the seller of boar.
+1666184145.6784668 buyer9 failed to buy salt from seller4
+Buyer buyer9 now picked item salt to buy at time 1666184145.6785016
+1666184145.7211986 buyer3 got a match reply from seller8
+Buyer buyer0 issues lookup to seller7 at time 1666184145.7534273
+Buyer buyer0 issues lookup to seller6 at time 1666184145.769659
+Buyer buyer0 issues lookup to seller5 at time 1666184145.7998233
+1666184145.8303897 buyer0 got a match reply from seller7
+1666184145.8399591 buyer2 got a match reply from seller5
+1666184145.8451276 buyer0 got a match reply from seller6
+1666184145.8911846 buyer0 picked seller7 to purchase fish
+buyer0 purchase item fish from  seller7 at 1666184145.9467056
+seller7 now has 8 remaining for item fish
+1666184145.9504426 buyer0 bought fish from seller7
+Buyer buyer0 now picked item boar to buy at time 1666184145.950479
+1666184146.0005193 buyer3 got a match reply from seller5
+Buyer buyer2 issues lookup to buyer9 at time 1666184146.0700986
+Buyer buyer2 issues lookup to seller8 at time 1666184146.0813935
+Buyer buyer2 issues lookup to buyer3 at time 1666184146.0935214
+1666184146.1506183 buyer2 picked seller8 to purchase fish
+1666184146.1791344 buyer2 got a match reply from seller1
+buyer2 purchase item fish from  seller8 at 1666184146.1884081
+seller8 now has 5 remaining for item fish
+1666184146.1914086 buyer2 bought fish from seller8
+Buyer buyer2 now picked item fish to buy at time 1666184146.1914425
+1666184146.203604 buyer2 got a match reply from seller8
+1666184146.3302526 buyer0 got a match reply from seller5
+1666184146.44005 buyer2 got a match reply from seller5
+Buyer buyer3 issues lookup to seller1 at time 1666184146.554619
+Buyer buyer3 issues lookup to buyer2 at time 1666184146.5562236
+Buyer buyer3 issues lookup to seller5 at time 1666184146.5583436
+1666184146.5768979 buyer3 picked seller8 to purchase salt
+buyer3 purchase item fish from  seller8 at 1666184146.6242113
+seller8 now has 4 remaining for item fish
+1666184146.6338913 buyer3 bought salt from seller8
+Buyer buyer3 now picked item fish to buy at time 1666184146.6339235
+Buyer buyer9 issues lookup to buyer2 at time 1666184146.6834462
+Buyer buyer9 issues lookup to seller8 at time 1666184146.73454
+Buyer buyer9 now picked item boar to buy at time 1666184146.860043
+Buyer buyer0 issues lookup to seller7 at time 1666184146.9581594
+Buyer buyer0 issues lookup to seller6 at time 1666184146.9785652
+Buyer buyer0 issues lookup to seller5 at time 1666184146.9940596
+1666184147.0917492 buyer0 picked seller5 to purchase boar
+1666184147.1076875 buyer0 got a match reply from seller4
+1666184147.1656153 buyer0 failed to buy boar from seller5
+Buyer buyer0 now picked item boar to buy at time 1666184147.1656437
+Buyer buyer2 issues lookup to buyer9 at time 1666184147.2177885
+Buyer buyer2 issues lookup to seller8 at time 1666184147.2426758
+Buyer buyer2 issues lookup to buyer3 at time 1666184147.2688987
+1666184147.3332813 buyer0 got a match reply from seller5
+1666184147.3423138 buyer0 got a match reply from seller5
+1666184147.4131036 buyer2 picked seller5 to purchase fish
+1666184147.4870784 buyer0 got a match reply from seller5
+1666184147.5290632 buyer0 got a match reply from seller5
+1666184147.5764835 buyer2 failed to buy fish from seller5
+Buyer buyer2 now picked item boar to buy at time 1666184147.5765154
+1666184147.626094 buyer2 got a match reply from seller1
+1666184147.6271229 buyer0 got a match reply from seller5
+Buyer buyer3 issues lookup to seller1 at time 1666184147.6389692
+1666184147.6394837 buyer2 got a match reply from seller8
+1666184147.6474483 buyer2 got a match reply from seller8
+Buyer buyer3 issues lookup to buyer2 at time 1666184147.6496825
+Buyer buyer3 issues lookup to seller5 at time 1666184147.6660457
+1666184147.6888494 buyer2 got a match reply from seller5
+1666184147.779541 buyer3 got a match reply from seller1
+1666184147.797218 buyer3 got a match reply from seller5
+1666184147.7973375 buyer3 picked seller1 to purchase fish
+1666184147.7985694 buyer3 got a match reply from seller8
+1666184147.801066 buyer3 got a match reply from seller8
+1666184147.8069727 buyer3 got a match reply from seller8
+1666184147.8129416 buyer3 got a match reply from seller8
+buyer3 purchase item fish from  seller1 at 1666184147.8138566
+seller1 now has 8 remaining for item fish
+1666184147.8141565 buyer3 bought fish from seller1
+Buyer buyer3 now picked item boar to buy at time 1666184147.8141906
+Buyer buyer9 issues lookup to buyer2 at time 1666184147.8615704
+Buyer buyer9 issues lookup to seller8 at time 1666184147.8630016
+Buyer buyer9 now picked item salt to buy at time 1666184147.8738608
+1666184148.0568264 buyer9 got a match reply from seller4
+Buyer buyer0 issues lookup to seller7 at time 1666184148.172971
+Buyer buyer0 issues lookup to seller6 at time 1666184148.2055364
+Buyer buyer0 issues lookup to seller5 at time 1666184148.2192574
+1666184148.2735486 buyer0 got a match reply from seller4
+1666184148.281559 buyer0 picked seller4 to purchase boar
+buyer0 purchase item boar from  seller4 at 1666184148.3209498
+seller4 now has 9 remaining for item boar
+1666184148.3235943 buyer0 bought boar from seller4
+Buyer buyer0 now picked item boar to buy at time 1666184148.3236225
+Buyer buyer2 issues lookup to buyer9 at time 1666184148.5872247
+Buyer buyer2 issues lookup to seller8 at time 1666184148.5972166
+Buyer buyer2 issues lookup to buyer3 at time 1666184148.6230507
+1666184148.7150848 buyer2 picked seller1 to purchase boar
+buyer2 purchase item fish from  seller1 at 1666184148.7571115
+seller1 now has 7 remaining for item fish
+1666184148.7619505 buyer2 bought boar from seller1
+Buyer buyer2 now picked item fish to buy at time 1666184148.7619758
+Buyer buyer3 issues lookup to seller1 at time 1666184148.821126
+Buyer buyer3 issues lookup to buyer2 at time 1666184148.8397982
+Buyer buyer3 issues lookup to seller5 at time 1666184148.8785825
+Buyer buyer9 issues lookup to buyer2 at time 1666184148.8813412
+1666184148.8960457 buyer2 got a match reply from seller4
+Buyer buyer9 issues lookup to seller8 at time 1666184148.9242651
+1666184149.0049422 buyer2 got a match reply from seller4
+1666184149.033513 buyer3 picked seller8 to purchase boar
+1666184149.0793023 buyer9 picked seller4 to purchase salt
+buyer3 purchase item fish from  seller8 at 1666184149.1259599
+seller8 now has 3 remaining for item fish
+1666184149.1307123 buyer3 bought boar from seller8
+Buyer buyer3 now picked item salt to buy at time 1666184149.130737
+buyer9 purchase item boar from  seller4 at 1666184149.172069
+seller4 now has 8 remaining for item boar
+1666184149.1760967 buyer9 bought salt from seller4
+Buyer buyer9 now picked item fish to buy at time 1666184149.1761224
+1666184149.2171998 buyer3 got a match reply from seller4
+Buyer buyer0 issues lookup to seller7 at time 1666184149.3387907
+Buyer buyer0 issues lookup to seller6 at time 1666184149.3591065
+Buyer buyer0 issues lookup to seller5 at time 1666184149.380341
+1666184149.51004 buyer3 got a match reply from seller4
+1666184149.5158823 buyer0 got a match reply from seller4
+1666184149.5176587 buyer0 picked seller4 to purchase boar
+buyer0 purchase item boar from  seller4 at 1666184149.6688423
+seller4 now has 7 remaining for item boar
+1666184149.6720889 buyer0 bought boar from seller4
+Buyer buyer0 now picked item boar to buy at time 1666184149.672114
+Buyer buyer2 issues lookup to buyer9 at time 1666184149.7656827
+Buyer buyer2 issues lookup to seller8 at time 1666184149.7799463
+Buyer buyer2 issues lookup to buyer3 at time 1666184149.805311
+1666184149.86362 buyer2 picked seller4 to purchase fish
+1666184149.8888438 buyer2 got a match reply from seller8
+1666184149.8909833 buyer2 got a match reply from seller8
+1666184149.8920014 buyer2 got a match reply from seller1
+buyer2 purchase item boar from  seller4 at 1666184149.8974476
+seller4 now has 6 remaining for item boar
+1666184149.9009328 buyer2 bought fish from seller4
+Buyer buyer2 now picked item salt to buy at time 1666184149.9009557
+Buyer buyer3 issues lookup to seller1 at time 1666184150.13576
+Buyer buyer3 issues lookup to buyer2 at time 1666184150.1584044
+1666184150.165453 buyer2 got a match reply from seller5
+Buyer buyer3 issues lookup to seller5 at time 1666184150.1695485
+Buyer buyer9 issues lookup to buyer2 at time 1666184150.183392
+Buyer buyer9 issues lookup to seller8 at time 1666184150.211631
+1666184150.2152889 buyer3 picked seller4 to purchase salt
+buyer3 purchase item boar from  seller4 at 1666184150.2771382
+seller4 now has 5 remaining for item boar
+1666184150.2812579 buyer3 bought salt from seller4
+Buyer buyer3 now picked item fish to buy at time 1666184150.2812855
+Buyer buyer9 now picked item fish to buy at time 1666184150.3135786
+1666184150.397607 buyer9 got a match reply from seller8
+1666184150.418489 buyer9 got a match reply from seller1
+1666184150.430734 buyer9 got a match reply from seller8
+1666184150.5684185 buyer9 got a match reply from seller5
+1666184150.6098347 buyer9 got a match reply from seller1
+1666184150.6663008 buyer9 got a match reply from seller5
+Buyer buyer0 issues lookup to seller7 at time 1666184150.6790314
+1666184150.6853135 buyer9 got a match reply from seller8
+Buyer buyer0 issues lookup to seller6 at time 1666184150.6974394
+Buyer buyer0 issues lookup to seller5 at time 1666184150.7089512
+                                                     Ñý Not starting broadcast server for localhost.
+NS running on localhost:9090 (127.0.0.1)
+Warning: HMAC key not set. Anyone can connect to this server!
+URI = PYRO:Pyro.NameServer@localhost:9090
+NS shut down.
+Buyer buyer0 now picked item boar to buy at time 1666184150.7576141
+1666184150.7641597 buyer0 got a match reply from seller4
+Buyer buyer2 issues lookup to buyer9 at time 1666184150.9119024
+Buyer buyer2 issues lookup to seller8 at time 1666184150.927988
+Buyer buyer2 issues lookup to buyer3 at time 1666184150.9596753
+1666184151.0837164 buyer2 picked seller8 to purchase salt
+buyer2 purchase item fish from  seller8 at 1666184151.1482
+seller8 now has 2 remaining for item fish
+1666184151.151496 buyer2 bought salt from seller8
+Buyer buyer2 now picked item salt to buy at time 1666184151.151525
+Buyer buyer3 issues lookup to seller1 at time 1666184151.2867045
+Buyer buyer3 issues lookup to buyer2 at time 1666184151.313266
+Buyer buyer3 issues lookup to seller5 at time 1666184151.3247237
+Buyer buyer9 issues lookup to buyer2 at time 1666184151.3255684
+Buyer buyer9 issues lookup to seller8 at time 1666184151.3544998
+1666184151.3738997 buyer3 got a match reply from seller1
+1666184151.4165633 buyer9 got a match reply from seller8
+1666184151.4219718 buyer9 picked seller5 to purchase fish
+1666184151.4325383 buyer3 picked seller1 to purchase fish
+1666184151.4376695 buyer3 got a match reply from seller8
+1666184151.4565032 buyer3 got a match reply from seller8
+1666184151.4667897 buyer9 got a match reply from seller8
+buyer3 purchase item fish from  seller1 at 1666184151.4676304
+seller1 now has 6 remaining for item fish
+Something went wrong in buy with error list index out of range
+1666184151.4739907 buyer3 bought fish from seller1
+Buyer buyer3 now picked item fish to buy at time 1666184151.4740143
+1666184151.4775941 buyer3 got a match reply from seller8
+1666184151.4792936 buyer9 failed to buy fish from seller5
+Buyer buyer9 now picked item salt to buy at time 1666184151.4793193
+1666184151.4835987 buyer9 got a match reply from seller1
+1666184151.490456 buyer3 got a match reply from seller8
+1666184151.523507 buyer9 got a match reply from seller8
+1666184151.5314193 buyer9 got a match reply from seller1
+1666184151.569653 buyer9 got a match reply from seller5
+1666184151.5714762 buyer3 got a match reply from seller5
+1666184151.5717494 buyer9 got a match reply from seller5
+Buyer buyer0 issues lookup to seller7 at time 1666184151.75984
+Buyer buyer0 issues lookup to seller6 at time 1666184151.761383
+Buyer buyer0 issues lookup to seller5 at time 1666184151.7644663
+1666184151.7850292 buyer0 picked seller4 to purchase boar
+1666184151.8020656 buyer0 got a match reply from seller4
+buyer0 purchase item boar from  seller4 at 1666184151.8242
+seller4 now has 4 remaining for item boar
+1666184151.8278701 buyer0 bought boar from seller4
+Buyer buyer0 now picked item boar to buy at time 1666184151.8278935
+Something went wrong in lookup with exception cannot schedule new futures after interpreter shutdown
+Something went wrong in lookup with exception cannot schedule new futures after interpreter shutdown
+Something went wrong in lookup with exception cannot schedule new futures after interpreter shutdown
+Something went wrong in lookup with exception cannot schedule new futures after shutdown
+Something went wrong in lookup with exception cannot schedule new futures after shutdown
+Something went wrong in lookup with exception cannot schedule new futures after interpreter shutdown
+Something went wrong in lookup with exception cannot schedule new futures after shutdown
+Something went wrong in lookup with exception cannot schedule new futures after interpreter shutdown
+Something went wrong in lookup with exception cannot schedule new futures after shutdown
+Something went wrong in lookup with exception cannot schedule new futures after shutdown
+Something went wrong in lookup with exception cannot schedule new futures after shutdown
+Something went wrong in lookup with exception cannot schedule new futures after shutdown
+Something went wrong in lookup with exception cannot schedule new futures after shutdown
+Something went wrong in lookup with exception cannot schedule new futures after shutdown
+Buyer buyer2 issues lookup to buyer9 at time 1666184152.1530302
 Something went wrong in run method with exception cannot schedule new futures after shutdown
