@@ -58,7 +58,6 @@ class Peer(Thread):
             
     # Inheriting the run method of thread class
     def run(self):
-        print(self.hop_count)
         try:
             # Registering the peer as Pyro5 object
             with Pyro4.Daemon(host = self.host) as daemon:
@@ -98,6 +97,7 @@ class Peer(Thread):
                     with self.lock_sellers:
                         if self.sellers:
                             random_seller_id = self.sellers[random.randint(0, len(self.sellers) - 1)]
+                            print(f"{time.time()} {self.id} picked {random_seller_id} to purchase {self.item}")
 
                             seller = Pyro4.Proxy(self.get_nameserver().lookup(random_seller_id))
                             picked_seller = self.executor.submit(seller.buy,self.id)
@@ -170,7 +170,7 @@ class Peer(Thread):
                 recipient = Pyro4.Proxy(self.get_nameserver().lookup(previous_peer))
                 search_path.pop()
                 search_path.insert(0,self.id)
-                self.executor.submit(recipient.reply,self.id,search_path)
+                self.executor.submit(recipient.reply,search_path)
             else:
                 # For each neighbour
                 for each_neighbour,uri in self.neighbors.items():
@@ -182,14 +182,14 @@ class Peer(Thread):
                     if self.id not in search_path:
                         new_search_path.append(self.id)
                     self.executor.submit(neighbor_proxy.lookup,product_name,hop_count,search_path)
-                    ######### lookup function of the next peer with peer id each_neighbour ###############
+                    
                 
         except Exception as e:
             print(f"Something went wrong in lookup with exception {e}")
 
 
     @Pyro4.expose
-    def reply(self, seller_id: str, id_list):
+    def reply(self,  id_list):
         try:
             if id_list and len(id_list) == 1:
 
@@ -201,7 +201,7 @@ class Peer(Thread):
             elif id_list and len(id_list) > 1:
                 recipient_id = id_list.pop()
                 with Pyro4.Proxy(self.neighbors[recipient_id]) as recipient:
-                    self.executor.submit(recipient.reply, self.id, id_list)
+                    self.executor.submit(recipient.reply, id_list)
 
         except(Exception) as e:
             print(f"Something went wrong while trying to fecth the reply with error {e}")
