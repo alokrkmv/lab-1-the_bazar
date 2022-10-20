@@ -20,3 +20,19 @@ We have used matplotlib to show a graphical representation of the network. Plott
 1. pass **show_bazar** argument as false when calling **create_bazar** function from main. This will prevent graph_generator to be invoked and hence resolving the error. However in this way the graphical representation of the network won't pe drawn.
 2. Another way is to install a GUI-backend for matplotlib ````python
 sudo apt-get install python3-tk````
+
+#### Documentation links
+
+1. Design Doc
+
+  ![design_doc](https://github.com/alokrkmv/lab-1-the_bazar/blob/main/src/Documentation/Design%20Doc.pdf)
+  
+2. Experiment Doc
+
+  ![experiment_doc](https://github.com/alokrkmv/lab-1-the_bazar/blob/main/src/Documentation/Experiment%20Doc.pdf)
+  
+ 3. Testing Doc
+
+   ![testing_doc](https://github.com/alokrkmv/lab-1-the_bazar/blob/main/src/Documentation/Testing%20Doc.pdf)
+    
+  
