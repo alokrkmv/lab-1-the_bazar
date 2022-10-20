@@ -4,7 +4,7 @@ from collections import defaultdict
 import json
 
 
-def generate_graph(node, vertices):
+def generate_graph(node, edge):
     """
     This function creates the connected peer to peer network of the bazaar randomly by taking number of nodes and the number of vertices.
     It makes sure that a path exists between peers. It returns an object of two elements, edges and node. Edges
@@ -18,7 +18,7 @@ def generate_graph(node, vertices):
     while True:
         d = defaultdict(list)
         # Generate
-        G = nx.gnm_random_graph(node,vertices)
+        G = nx.gnm_random_graph(node,edge)
         edges = G.edges
         # Making sure that the graph is connected
         if not nx.is_connected(G):
