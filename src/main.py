@@ -49,7 +49,7 @@ if __name__=='__main__':
     peer_id_list = []
     for peer in peers:
         peer_id_list.append(peer.id)
-    edges = create_bazar(peer_id_list)
+    edges = create_bazar(peer_id_list, True)
     hop_count = get_hop_count(edges)
     # Set the maximum hop count for each peer
     for peer in peers:
