@@ -110,7 +110,7 @@ class Peer(Thread):
                     
                     for neighbor,uri in self.neighbors.items():
                         neighbor_proxy = Pyro4.Proxy(uri) # getting the uri of the neighbors
-                        print(f"{self.get_timestamp()} - Buyer {self.id} issues lookup to {neighbor}")
+                        print(f"{self.get_timestamp()} - {self.id} issues lookup to {neighbor}")
                         # Creating threads for each neighbor's lookup
                         lookups.append(self.executor.submit(neighbor_proxy.lookup,self.item,self.hop_count,[self.id]))
                     for lookup_request in lookups:
@@ -214,7 +214,7 @@ class Peer(Thread):
         previous_peer = search_path[-1]
         try:
             # If seller found and selling the item call reply
-            if self.role == "seller" and product_name == self.item and self.items_count>0:
+            if self.role == "seller" and product_name == self.item:
                 
                 recipient = Pyro4.Proxy(self.get_nameserver().lookup(previous_peer))
                 search_path.pop()
