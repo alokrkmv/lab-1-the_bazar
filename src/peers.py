@@ -134,7 +134,7 @@ class Peer(Thread):
                                 if picked_seller.result(): # run the buy method of the seller
                                     print(self.get_timestamp(), '-', self.id, "bought", self.item, "from", random_seller_id)
                                 else:
-                                    print(self.get_timestamp(), self.id, "failed to buy", self.item, "from", random_seller_id)
+                                    print(self.get_timestamp(), '-', self.id, "failed to buy", self.item, "from", random_seller_id)
                         self.sellers = []
                         
                         # Choose another random item to buy
@@ -213,7 +213,7 @@ class Peer(Thread):
             hop_count -= 1
         previous_peer = search_path[-1]
         try:
-            if self.role == "seller" and product_name == self.item:
+            if self.role == "seller" and product_name == self.item and self.items_count > 0:
                 # If seller found and selling the item call reply
                 recipient = Pyro4.Proxy(self.get_nameserver().lookup(previous_peer))
                 search_path.pop()

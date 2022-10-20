@@ -6,13 +6,11 @@ from peers import Peer
 """
 Test case 1
 Description: There are 2 peers in the network. 1 buyer and 1 seller. 
-Buyer requests for salt and the seller is of salt. The seller initially has 5 salt items to sell. 
-The buyr starts a lookup, and matches with the seller. The seller sells 1 salt item to the buyer and its total count decreases.
-The buyer then selects another item for buying, but doesnnt match with the buyer untill it selects salt again. 
-When buyer selects salt again it matches with the seller and buys salt. This continues till seller's salt stock is finished.
+Buyer requests for salt and the seller is of salt. The seller initially has 2 salt items to sell. 
+The buyer starts a lookup, and matches with the seller. The seller sells 1 salt item to the buyer and its total count decreases.
+When the total count of items of the seller goes to 0, it randomly pick another item and not the same item to sell.
 
-Result: The test shows that buyer can only buy the item which the seller has, it keeps changing the item it wants to buy randomly
-and keeps buying the item salt until sellers items get finished.
+Result: Every time seller's items finish, it picks another item to sell.
 """
 
 
@@ -23,7 +21,7 @@ ids = {
 }
 
 items = ["fish","salt","boar"]
-items_count = 5
+items_count = 2
 hostname = "localhost"
 base_path = os.getcwd()
 peers = []
@@ -46,6 +44,8 @@ for peer in peers:
 
     if peer.role == "seller":
         peer.item = ["fish","salt","boar"][1]
+        peer.max_items = 2
+
     print(peer.role, peer.item)
 
 for peer in peers:

@@ -5,25 +5,30 @@ from peers import Peer
 
 """
 Test case 1
-Description: There are 2 peers in the network. 1 buyer and 1 seller. 
-Buyer requests for salt and the seller is of salt. The seller initially has 5 salt items to sell. 
-The buyr starts a lookup, and matches with the seller. The seller sells 1 salt item to the buyer and its total count decreases.
-The buyer then selects another item for buying, but doesnnt match with the buyer untill it selects salt again. 
-When buyer selects salt again it matches with the seller and buys salt. This continues till seller's salt stock is finished.
+Description: There are 5 peers in the network. 4 buyers and 1 seller. 
+All buyers request for salt and the seller is of salt. The seller initially has 2 salt items to sell. 
+The buyers start a lookup, and matche with single seller. 
 
-Result: The test shows that buyer can only buy the item which the seller has, it keeps changing the item it wants to buy randomly
-and keeps buying the item salt until sellers items get finished.
+But randomly selects any seller.
+That seller sells 1 salt item to the buyer and its total count decreases.
+
+Result: A seller sends reply back to all the buyers it matched with. But among the matched buyers, only 1 buyer is locking the seller. 
+And if the seller's items are 0, the buyer fails to make a purchase. 
 """
 
 
 
 ids = {
     "buyer0": "buyer",
-    "seller1": "seller"
+    "buyer1": "buyer",
+    "buyer2": "buyer",
+    "buyer3": "buyer",
+    "seller4": "seller",
+
 }
 
 items = ["fish","salt","boar"]
-items_count = 5
+items_count = 2
 hostname = "localhost"
 base_path = os.getcwd()
 peers = []
@@ -46,6 +51,8 @@ for peer in peers:
 
     if peer.role == "seller":
         peer.item = ["fish","salt","boar"][1]
+        peer.max_items = 2
+
     print(peer.role, peer.item)
 
 for peer in peers:
