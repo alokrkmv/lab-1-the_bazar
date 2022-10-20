@@ -177,7 +177,7 @@ class Peer(Thread):
                         break
                 # reset the max count of items
                 self.items_count = self.max_items
-                print("{} is now the seller of {}.".format(self.id, self.item))
+                print(f"{self.get_timestamp()} - {self.id} is now the seller of {self.item}")
                 self.output_array.append(f"Seller {self.id} is now the seller of {self.item}.")
                 return False
         except Exception as e:
