@@ -9,7 +9,7 @@ from create_bazar import create_bazar, get_hope_count
 # It is responsible for spwaning peers as buyers or sellers
 
 def main():
-    config_file = open(os.path.join(os.path.dirname(__file__), '..', 'config.json'))
+    config_file = open('config.json')
     data = json.load(config_file)
     default_configs = data["default_config"]
     # If number of peers is passed through command line then use that as number of peer
@@ -33,7 +33,7 @@ def main():
         ids[id] = r
     base_path = os.getcwd()
     for i in range(2,number_of_peers):
-        role = roles[random.randint(0,len(roles)-1)]
+        role = "buyer"
         id = f"{role}{str(i)}"
         ids[id] = role
     for id,role in ids.items():
@@ -53,7 +53,8 @@ if __name__=='__main__':
     hop_count = get_hope_count(edges)
     # Set the maximum hop count for each peer
     for peer in peers:
-        peer.hop_count = 2
+        peer.hop_count = hop_count
+    
     base_path = os.getcwd()
     print(base_path)
     try: 

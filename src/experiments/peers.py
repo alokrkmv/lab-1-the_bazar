@@ -8,7 +8,7 @@ import json
 import copy
 from datetime import datetime
 TIMEDATA = []
-ITERATIONS = 1000
+ITERATIONS = 20
 FLAG = 0
 
 class Peer(Thread):
@@ -33,6 +33,7 @@ class Peer(Thread):
         self.max_items = 10
         self.sellers = []
         self.base_path = base_path
+        self.time = datetime.now()
         
 
     def __str__(self):
@@ -91,9 +92,9 @@ class Peer(Thread):
            
                 if self.role=="buyer":
                     for i in range(ITERATIONS):
-                        print(f"####################### Iterations {i} #########################")
+                        print(f"####################### {self.id} Iterations {i} #########################")
                         global FLAG
-                        if i >= 999:
+                        if i >= 19:
                             FLAG = 1
                         start_time = datetime.now()
                         lookups = []
@@ -123,24 +124,33 @@ class Peer(Thread):
                             self.sellers = []
                             self.item = self.items[random.randint(0, len(self.items) - 1)]
                             print(f"{self.get_timestamp()} - Buyer {self.id} now picked item {self.item} to buy")
-                        end_time = datetime.now()
-                        print((end_time-start_time).microseconds)
-                        global TIMEDATA
-                        TIMEDATA.append((end_time-start_time).microseconds*0.001)
+                    end_time = datetime.now()
+                    print((end_time-start_time).microseconds)
+                    # global TIMEDATA
+                    # TIMEDATA.append((end_time-start_time).microseconds*0.001)
                         # Buyer waiting for a random amount of time before starting a new purchase
                         # time.sleep(1)
-                    print(f"time_data {TIMEDATA}")
-                    data = {"data":TIMEDATA}
-                    with open ("experiment_1.json","w+") as f:
+                    # print(f"time_data {TIMEDATA}")
+                    data = {"data":(end_time-start_time).microseconds*0.001}
+                    with open (f"experiment_1_{self.id}.json","w+") as f:
                         json.dump(data,f)
 
                 
                 while True:
-                    if FLAG == 1:
-                        break
+                    # if FLAG == 1:
+                    #     break
                     time.sleep(1) 
         
         except Exception as e:
+            end_time = datetime.now()
+            print((end_time-start_time).microseconds)
+            # TIMEDATA.append((end_time-start_time).microseconds*0.001)
+                # Buyer waiting for a random amount of time before starting a new purchase
+                # time.sleep(1)
+            # print(f"time_data {TIMEDATA}")
+            data = {"data":(end_time-start_time).microseconds*0.01}
+            with open (f"experiment_1_{self.id}.json","w+") as f:
+                json.dump(data,f)
             print(f"Something went wrong in run method with exception {e}")
     
     # This method is reponsible for the purchase of an item item logic

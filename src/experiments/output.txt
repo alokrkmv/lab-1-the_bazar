@@ -1,0 +1,74 @@
++++++++++++++Starting The Bazar+++++++++++++++++++++++
+Installing all the requirements for the project
+Starting nameserver in detached mode
+Namespace server is already running on localhost
+Removing dead peers from the server
+Potentially removing lots of items from the Name server. Are you sure (y/n)?1 items removed.
+Removing dead peers from the server
+Potentially removing lots of items from the Name server. Are you sure (y/n)?5 items removed.
+Starting the main process
+Showing the graphical representation of the bazaar
+/home/alokrkmv/Documents/my_code/lab-1-the_bazar/src/experiments
+2022-10-20 02:40:18.396632 - seller1 joined the bazar as seller selling boar
+2022-10-20 02:40:18.397222 - buyer0 joined the bazar as buyer looking for boar
+####################### buyer0 Iterations 0 #########################
+2022-10-20 02:40:20.401788 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.404629 - Buyer buyer0 now picked item salt to buy
+####################### buyer0 Iterations 1 #########################
+2022-10-20 02:40:20.404786 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.408480 - Buyer buyer0 now picked item fish to buy
+####################### buyer0 Iterations 2 #########################
+2022-10-20 02:40:20.408669 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.410802 - Buyer buyer0 now picked item salt to buy
+####################### buyer0 Iterations 3 #########################
+2022-10-20 02:40:20.410936 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.412800 - Buyer buyer0 now picked item boar to buy
+####################### buyer0 Iterations 4 #########################
+2022-10-20 02:40:20.413081 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.414971 - Buyer buyer0 now picked item fish to buy
+####################### buyer0 Iterations 5 #########################
+2022-10-20 02:40:20.415198 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.416931 - Buyer buyer0 now picked item fish to buy
+####################### buyer0 Iterations 6 #########################
+2022-10-20 02:40:20.417160 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.418650 - Buyer buyer0 now picked item fish to buy
+####################### buyer0 Iterations 7 #########################
+2022-10-20 02:40:20.418814 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.420346 - Buyer buyer0 now picked item salt to buy
+####################### buyer0 Iterations 8 #########################
+2022-10-20 02:40:20.420542 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.422055 - Buyer buyer0 now picked item fish to buy
+####################### buyer0 Iterations 9 #########################
+2022-10-20 02:40:20.422191 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.423504 - Buyer buyer0 now picked item boar to buy
+####################### buyer0 Iterations 10 #########################
+2022-10-20 02:40:20.423636 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.425265 - Buyer buyer0 now picked item fish to buy
+####################### buyer0 Iterations 11 #########################
+2022-10-20 02:40:20.425424 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.426813 - Buyer buyer0 now picked item fish to buy
+####################### buyer0 Iterations 12 #########################
+2022-10-20 02:40:20.426961 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.428250 - Buyer buyer0 now picked item boar to buy
+####################### buyer0 Iterations 13 #########################
+2022-10-20 02:40:20.428420 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.429885 - Buyer buyer0 now picked item fish to buy
+####################### buyer0 Iterations 14 #########################
+2022-10-20 02:40:20.430019 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.431272 - Buyer buyer0 now picked item boar to buy
+####################### buyer0 Iterations 15 #########################
+2022-10-20 02:40:20.431401 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.432786 - Buyer buyer0 now picked item boar to buy
+####################### buyer0 Iterations 16 #########################
+2022-10-20 02:40:20.433030 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.434520 - Buyer buyer0 now picked item boar to buy
+####################### buyer0 Iterations 17 #########################
+2022-10-20 02:40:20.434698 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.436056 - Buyer buyer0 now picked item salt to buy
+####################### buyer0 Iterations 18 #########################
+2022-10-20 02:40:20.436195 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.437449 - Buyer buyer0 now picked item fish to buy
+####################### buyer0 Iterations 19 #########################
+2022-10-20 02:40:20.437599 - buyer0 issues lookup to seller1
+2022-10-20 02:40:20.438813 - Buyer buyer0 now picked item fish to buy
+1362
