@@ -5,7 +5,7 @@ import sys
 import random
 import sys
 from peers import Peer
-from create_bazar import create_bazar, get_hope_count
+from create_bazar import create_bazar, get_hop_count
 # It is responsible for spwaning peers as buyers or sellers
 
 def main():
@@ -50,7 +50,7 @@ if __name__=='__main__':
     for peer in peers:
         peer_id_list.append(peer.id)
     edges = create_bazar(peer_id_list)
-    hop_count = get_hope_count(edges)
+    hop_count = get_hop_count(edges)
     # Set the maximum hop count for each peer
     for peer in peers:
         peer.hop_count = hop_count
