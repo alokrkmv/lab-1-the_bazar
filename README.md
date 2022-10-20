@@ -13,6 +13,7 @@
 5. Number of peers is optional paramter if passed the network will generate a network with equivalent number of peers otherwise it will default to six peer network based on the default config provided in config_file.
 6. A sample run command might look like ````bash run.sh localhost 10```` or ```` bash run.sh localhost````
 7. In first case a 10 peer network will be created whereas in the second a network of 6 peers will be created.
+8. The output of the program after running the network for a few minutes is present in ````src/tmp/output/output.txt````
 
 ##### A know issue
 
@@ -29,5 +30,6 @@ sudo apt-get install python3-tk````
 2 ![experiment_doc](https://github.com/alokrkmv/lab-1-the_bazar/blob/main/src/Documentation/Experiment%20Doc.pdf)
   
 3 ![testing_doc](https://github.com/alokrkmv/lab-1-the_bazar/blob/main/src/Documentation/Testing%20Doc.pdf)
+
     
   
