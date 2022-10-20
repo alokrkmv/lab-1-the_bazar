@@ -58,8 +58,10 @@ seller salt
 2022-10-20 01:28:25.537796 - Buyer buyer0 issues lookup to seller1
 2022-10-20 01:28:25.544599 - buyer0 got a match reply from seller1
 2022-10-20 01:28:25.544723 - buyer0 picked seller1 to purchase salt
+
 2022-10-20 01:28:25.547704 - seller1 sold salt to buyer0
 2022-10-20 01:28:25.547721 - seller1 now has 0 salt item(s) remaining
+
 2022-10-20 01:28:25.547900 - buyer0 bought salt from seller1
 2022-10-20 01:28:25.547926 - Buyer buyer0 now picked item fish to buy
 2022-10-20 01:28:26.549814 - Buyer buyer0 issues lookup to seller1
@@ -67,17 +69,9 @@ seller salt
 2022-10-20 01:28:29.557314 - Buyer buyer0 issues lookup to seller1
 2022-10-20 01:28:29.559370 - Buyer buyer0 now picked item fish to buy
 2022-10-20 01:28:30.561409 - Buyer buyer0 issues lookup to seller1
+
 2022-10-20 01:28:30.564408 - Buyer buyer0 now picked item salt to buy
 2022-10-20 01:28:32.567721 - Buyer buyer0 issues lookup to seller1
 2022-10-20 01:28:32.575811 - buyer0 got a match reply from seller1
 2022-10-20 01:28:32.577977 - buyer0 picked seller1 to purchase salt
-seller1 is now the seller of fish.
-2022-10-20 01:28:32.584483 buyer0 failed to buy salt from seller1
-2022-10-20 01:28:32.584501 - Buyer buyer0 now picked item fish to buy
-2022-10-20 01:28:34.588738 - Buyer buyer0 issues lookup to seller1
-2022-10-20 01:28:34.599930 - buyer0 got a match reply from seller1
-2022-10-20 01:28:34.601186 - buyer0 picked seller1 to purchase fish
-2022-10-20 01:28:34.603447 - seller1 sold fish to buyer0
-2022-10-20 01:28:34.603454 - seller1 now has 9 fish item(s) remaining
-2022-10-20 01:28:34.603595 - buyer0 bought fish from seller1
-2022-10-20 01:28:34.603606 - Buyer buyer0 now picked item salt to buy
+
