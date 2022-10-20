@@ -109,7 +109,8 @@ class Peer(Thread):
                         self.sellers = []
                         self.item = self.items[random.randint(0, len(self.items) - 1)]
                         print(f"Buyer {self.id} now picked item {self.item} to buy at time {time.time()}")
-                    time.sleep(1)
+                    # Buyer waiting for a random amount of time before starting a new purchase
+                    time.sleep(random.randint(1,3))
                 
                 while True:
                     time.sleep(1) 
@@ -134,10 +135,10 @@ class Peer(Thread):
                         self.item = picked_item
                         break
                         
-                    self.items_count = self.max_items
-                    print("{} is now the seller of {}.".format(self.id, self.item))
-                    self.output_array.append(f"Seller {self.id} is now the seller of {self.item}.")
-                    return False
+                self.items_count = self.max_items
+                print("{} is now the seller of {}.".format(self.id, self.item))
+                self.output_array.append(f"Seller {self.id} is now the seller of {self.item}.")
+                return False
         except Exception as e:
             print(f"Something went wrong in buy with error {e}")
 
@@ -175,12 +176,12 @@ class Peer(Thread):
                 # For each neighbour
                 for each_neighbour,uri in self.neighbors.items():
                     # create a deep copy of the search path
-                    new_search_path = search_path[:]
+                    new_search_path = copy.deepcopy(search_path)
                     if each_neighbour == previous_peer:  
                         continue
                     neighbor_proxy = Pyro4.Proxy(uri)
                     if self.id not in search_path:
-                        new_search_path.append(self.id)
+                        search_path.append(self.id)
                     self.executor.submit(neighbor_proxy.lookup,product_name,hop_count,search_path)
                     
                 
