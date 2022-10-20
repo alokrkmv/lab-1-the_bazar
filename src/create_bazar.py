@@ -120,7 +120,8 @@ def get_hop_count(edges):
     This function gets the max hop count for the network. it uses a matrix of connection mapping
     between peers. Each row is peer and each column is a peer. 0 represents no connection, 1 represents
     connection is present between those 2 peers. It returns an integer which is used as the hopcount for
-    all the peers (length of longest path-1).
+    all the peers (length of longest path-1). Due to time constraints, for nodes greater than 10, this 
+    function doesn't compute the longest path instead just returns the hop count as 6.
     Args:
         edges: nxn matrix
     Returns:
