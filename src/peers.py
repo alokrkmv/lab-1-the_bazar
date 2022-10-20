@@ -213,8 +213,9 @@ class Peer(Thread):
             hop_count -= 1
         previous_peer = search_path[-1]
         try:
-            if self.role == "seller" and product_name == self.item:
-                # If seller found and selling the item call reply
+            # If seller found and selling the item call reply
+            if self.role == "seller" and product_name == self.item and self.items_count>0:
+                
                 recipient = Pyro4.Proxy(self.get_nameserver().lookup(previous_peer))
                 search_path.pop()
                 search_path.insert(0,self.id)
@@ -223,8 +224,6 @@ class Peer(Thread):
             else:
                 # For each neighbour
                 for each_neighbour,uri in self.neighbors.items():
-                    # create a deep copy of the search path
-                    new_search_path = copy.deepcopy(search_path)
                     # not sending the message back to the peer from which it was received
                     if each_neighbour == previous_peer:  
                         continue
@@ -235,7 +234,10 @@ class Peer(Thread):
                     self.executor.submit(neighbor_proxy.lookup,product_name,hop_count,search_path)
  
         except Exception as e:
-            print(f"Something went wrong in lookup with exception {e}. Peers still loading.")
+            if "dictionary" in str(e):
+                print("Peers still loading!!!")
+            else:
+                print(f"Something went wrong in lookup with exception {e}.")
 
 
     @Pyro4.expose
