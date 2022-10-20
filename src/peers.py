@@ -1,18 +1,19 @@
 import Pyro4
 from concurrent.futures import ThreadPoolExecutor
 from threading import Thread, Lock
+from multiprocessing import Process
 import random
 import time
 import json
 import copy
 from datetime import datetime
 
-class Peer(Thread):
+class Peer(Process):
     def __init__(self,id,role,items, items_count,host,base_path):
 
         # To inherit the thread class it is necessary to inherit the init and 
         # run method of the thread class
-        Thread.__init__(self)
+        Process.__init__(self)
         self.id = id
         self.role  = role
         self.items = items
