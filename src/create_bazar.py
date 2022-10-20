@@ -141,6 +141,8 @@ def get_hop_count(edges):
     graph_matrix = [[0]*nodes for _ in range(nodes)]
     if nodes>10:
         return 6
+    if nodes<=2:
+        return 1
     for e in edges:
         graph_matrix[e[0]][e[1]] = 1
     return get_longest_path(graph_matrix)-1
