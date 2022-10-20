@@ -53,7 +53,7 @@ if __name__=='__main__':
     hop_count = get_hop_count(edges)
     # Set the maximum hop count for each peer
     for peer in peers:
-        peer.hop_count = hop_count
+        peer.hop_count = 2 # hop_count
     base_path = os.getcwd()
     print(base_path)
     try: 
