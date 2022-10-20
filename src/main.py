@@ -31,13 +31,13 @@ def main():
     for i,r in enumerate(roles):
         id = f"{r}{str(i)}"
         ids[id] = r
-
+    base_path = os.getcwd()
     for i in range(2,number_of_peers):
         role = roles[random.randint(0,len(roles)-1)]
         id = f"{role}{str(i)}"
         ids[id] = role
     for id,role in ids.items():
-        peer = Peer(id,role,items,items_count,hostname)
+        peer = Peer(id,role,items,items_count,hostname,base_path)
         peers.append(peer)
     return peers
 
@@ -54,8 +54,15 @@ if __name__=='__main__':
     # Set the maximum hop count for each peer
     for peer in peers:
         peer.hop_count = hop_count
+    base_path = os.getcwd()
+    print(base_path)
     try: 
-        for peer in peers:
+        for i,peer in enumerate(peers):
+            new_path = f"{base_path}/peer/peer{i}"
+            isExist = os.path.exists(new_path)
+            if not isExist:
+                os.makedirs(new_path)
+            os.chdir(new_path)
             peer.start()
     except KeyboardInterrupt:
         sys.exit()

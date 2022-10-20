@@ -8,7 +8,7 @@ import copy
 
 
 class Peer(Thread):
-    def __init__(self,id,role,items, items_count,host):
+    def __init__(self,id,role,items, items_count,host,base_path):
 
         # To inherit the thread class it is necessary to inherit the init and 
         # run method of the thread class
@@ -28,6 +28,7 @@ class Peer(Thread):
         self.output_array = []
         self.max_items = 10
         self.sellers = []
+        self.base_path = base_path
         
 
     def __str__(self):
@@ -43,7 +44,7 @@ class Peer(Thread):
 
     def set_healthy_neighbors(self, peer_id):
         time.sleep(2)
-        bazar_network = open("bazaar.json")
+        bazar_network = open(f"{self.base_path}/bazaar.json")
         data = json.load(bazar_network)
         try:
             expected_neighbors = data[peer_id]
