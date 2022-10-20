@@ -5,7 +5,7 @@ import random
 import time
 import json
 import copy
-
+from datetime import datetime
 
 class Peer(Thread):
     def __init__(self,id,role,items, items_count,host,base_path):
@@ -57,6 +57,9 @@ class Peer(Thread):
             self.neighbors[neighbor] = neighbor_uri
                
             
+    def get_timestamp(self):
+        return datetime.now()
+
     # Inheriting the run method of thread class
     def run(self):
         try:
@@ -69,9 +72,9 @@ class Peer(Thread):
                 except Exception as e:
                     print(f"Registring to nameserver failed with error {e}")
                 if self.role == "buyer":
-                    print(f"{self.id} joined the bazar as buyer looking for {self.item} at {time.time()}")
+                    print(f"{self.get_timestamp()} - {self.id} joined the bazar as buyer looking for {self.item}")
                 else:
-                    print(f"{self.id} joined the bazar as seller selling {self.item} at {time.time()}")
+                    print(f"{self.get_timestamp()} - {self.id} joined the bazar as seller selling {self.item}")
                 
                 # Start the Pyro requestLoop
                 self.executor.submit(daemon.requestLoop)
@@ -89,7 +92,7 @@ class Peer(Thread):
                     
                         
                         neighbor_proxy = Pyro4.Proxy(uri)
-                        print(f"Buyer {self.id} issues lookup to {neighbor} at time {time.time()}")
+                        print(f"{self.get_timestamp()} - Buyer {self.id} issues lookup to {neighbor}")
                        
                         lookups.append(self.executor.submit(neighbor_proxy.lookup,self.item,self.hop_count,[self.id]))
                     for lookup_request in lookups:
@@ -98,18 +101,18 @@ class Peer(Thread):
                     with self.lock_sellers:
                         if self.sellers:
                             random_seller_id = self.sellers[random.randint(0, len(self.sellers) - 1)]
-                            print(f"{time.time()} {self.id} picked {random_seller_id} to purchase {self.item}")
+                            print(f"{self.get_timestamp()} - {self.id} picked {random_seller_id} to purchase {self.item}")
 
                             seller = Pyro4.Proxy(self.get_nameserver().lookup(random_seller_id))
                             picked_seller = self.executor.submit(seller.buy,self.id)
 
                             if picked_seller.result():
-                                print(time.time(), self.id, "bought", self.item, "from", random_seller_id)
+                                print(self.get_timestamp(), '-', self.id, "bought", self.item, "from", random_seller_id)
                             else:
-                                print(time.time(), self.id, "failed to buy", self.item, "from", random_seller_id)
+                                print(self.get_timestamp(), self.id, "failed to buy", self.item, "from", random_seller_id)
                         self.sellers = []
                         self.item = self.items[random.randint(0, len(self.items) - 1)]
-                        print(f"Buyer {self.id} now picked item {self.item} to buy at time {time.time()}")
+                        print(f"{self.get_timestamp()} - Buyer {self.id} now picked item {self.item} to buy")
                     # Buyer waiting for a random amount of time before starting a new purchase
                     time.sleep(random.randint(1,3))
                 
@@ -126,8 +129,8 @@ class Peer(Thread):
         try:
             if self.items_count > 0:
                 self.items_count -= 1
-                print(f"{buyer_id} purchase item {self.item} from  {self.id} at {time.time()}")
-                print(f"{self.id} now has {self.items_count} remaining for item {self.item}")
+                print(f"{self.get_timestamp()} - {buyer_id} purchased item {self.item} from {self.id}")
+                print(f"{self.get_timestamp()} - {self.id} now has {self.items_count} {self.item} item(s) remaining")
                 return True
             else:
                 while True:
@@ -187,7 +190,7 @@ class Peer(Thread):
                     
                 
         except Exception as e:
-            print(f"Something went wrong in lookup with exception {e}")
+            print(f"Something went wrong in lookup with exception {e}. Peers still loading.")
 
 
     @Pyro4.expose
@@ -195,7 +198,7 @@ class Peer(Thread):
         try:
             if id_list and len(id_list) == 1:
 
-                print(time.time(), self.id, "got a match reply from", id_list[0])
+                print(self.get_timestamp(), '-', self.id, "got a match reply from", id_list[0])
 
                 with self.lock_sellers:
                     self.sellers.append(id_list[0])

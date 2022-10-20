@@ -1,0 +1,197 @@
++++++++++++++Starting The Bazar+++++++++++++++++++++++
+Installing all the requirements for the project
+Requirement already satisfied: Pyro4==4.82 in /home/saurabh/.local/lib/python3.8/site-packages (from -r requirements.txt (line 1)) (4.82)
+Requirement already satisfied: networkx==2.8.7 in /home/saurabh/.local/lib/python3.8/site-packages (from -r requirements.txt (line 2)) (2.8.7)
+Requirement already satisfied: matplotlib==3.6.1 in /home/saurabh/.local/lib/python3.8/site-packages (from -r requirements.txt (line 3)) (3.6.1)
+Requirement already satisfied: serpent>=1.27; python_version >= "3.2" in /home/saurabh/.local/lib/python3.8/site-packages (from Pyro4==4.82->-r requirements.txt (line 1)) (1.41)
+Requirement already satisfied: numpy>=1.19 in /home/saurabh/.local/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (1.23.4)
+Requirement already satisfied: contourpy>=1.0.1 in /home/saurabh/.local/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (1.0.5)
+Requirement already satisfied: pillow>=6.2.0 in /usr/lib/python3/dist-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (7.0.0)
+Requirement already satisfied: python-dateutil>=2.7 in /usr/lib/python3/dist-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (2.7.3)
+Requirement already satisfied: fonttools>=4.22.0 in /home/saurabh/.local/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (4.37.4)
+Requirement already satisfied: packaging>=20.0 in /home/saurabh/.local/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (21.3)
+Requirement already satisfied: cycler>=0.10 in /home/saurabh/.local/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (0.11.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in /home/saurabh/.local/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (1.4.4)
+Requirement already satisfied: pyparsing>=2.2.1 in /home/saurabh/.local/lib/python3.8/site-packages (from matplotlib==3.6.1->-r requirements.txt (line 3)) (3.0.9)
+Starting nameserver in detached mode
+Namespace server is already running on localhost
+Removing dead peers from the server
+Potentially removing lots of items from the Name server. Are you sure (y/n)?3 items removed.
+Removing dead peers from the server
+Potentially removing lots of items from the Name server. Are you sure (y/n)?1 items removed.
+Starting the main process
+Showing the graphical representation of the bazaar
+2022-10-19 20:36:56.757760 - seller3 joined the bazar as seller selling boar
+2022-10-19 20:36:56.761005 - seller1 joined the bazar as seller selling boar
+2022-10-19 20:36:56.761902 - seller2 joined the bazar as seller selling fish
+2022-10-19 20:36:56.763194 - buyer0 joined the bazar as buyer looking for fish
+2022-10-19 20:36:58.783651 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:36:58.785166 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:36:58.787134 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:36:58.797816 - buyer0 got a match reply from seller2
+2022-10-19 20:36:58.810733 - buyer0 picked seller2 to purchase fish
+2022-10-19 20:36:58.817667 - buyer0 got a match reply from seller2
+2022-10-19 20:36:58.827034 - buyer0 purchased item fish from seller2
+2022-10-19 20:36:58.827047 - seller2 now has 4 fish item(s) remaining
+2022-10-19 20:36:58.828107 - buyer0 bought fish from seller2
+2022-10-19 20:36:58.828125 - Buyer buyer0 now picked item salt to buy
+2022-10-19 20:36:58.837252 - buyer0 got a match reply from seller2
+2022-10-19 20:37:01.831767 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:01.833037 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:01.835300 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:01.872183 - buyer0 picked seller2 to purchase salt
+2022-10-19 20:37:01.886564 - buyer0 purchased item fish from seller2
+2022-10-19 20:37:01.886582 - seller2 now has 3 fish item(s) remaining
+2022-10-19 20:37:01.888008 - buyer0 bought salt from seller2
+2022-10-19 20:37:01.888028 - Buyer buyer0 now picked item salt to buy
+2022-10-19 20:37:03.891893 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:03.894034 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:03.901558 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:03.923318 - Buyer buyer0 now picked item fish to buy
+2022-10-19 20:37:06.923877 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:06.925164 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:06.926747 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:06.951718 - buyer0 got a match reply from seller2
+2022-10-19 20:37:06.958409 - buyer0 got a match reply from seller2
+2022-10-19 20:37:06.959322 - buyer0 picked seller2 to purchase fish
+2022-10-19 20:37:06.971040 - buyer0 purchased item fish from seller2
+2022-10-19 20:37:06.971060 - seller2 now has 2 fish item(s) remaining
+2022-10-19 20:37:06.972037 - buyer0 bought fish from seller2
+2022-10-19 20:37:06.972056 - Buyer buyer0 now picked item salt to buy
+2022-10-19 20:37:06.978656 - buyer0 got a match reply from seller2
+2022-10-19 20:37:08.975044 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:08.976481 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:08.977654 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:08.994414 - buyer0 picked seller2 to purchase salt
+2022-10-19 20:37:09.022777 - buyer0 purchased item fish from seller2
+2022-10-19 20:37:09.022794 - seller2 now has 1 fish item(s) remaining
+2022-10-19 20:37:09.023822 - buyer0 bought salt from seller2
+2022-10-19 20:37:09.023900 - Buyer buyer0 now picked item boar to buy
+2022-10-19 20:37:10.026814 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:10.030018 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:10.032101 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:10.051098 - buyer0 got a match reply from seller1
+2022-10-19 20:37:10.053143 - buyer0 got a match reply from seller1
+2022-10-19 20:37:10.065981 - buyer0 got a match reply from seller3
+2022-10-19 20:37:10.067809 - buyer0 picked seller1 to purchase boar
+2022-10-19 20:37:10.068191 - buyer0 got a match reply from seller3
+2022-10-19 20:37:10.070797 - buyer0 purchased item boar from seller1
+2022-10-19 20:37:10.070803 - seller1 now has 4 boar item(s) remaining
+2022-10-19 20:37:10.071130 - buyer0 bought boar from seller1
+2022-10-19 20:37:10.071144 - Buyer buyer0 now picked item boar to buy
+2022-10-19 20:37:12.075607 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:12.077544 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:12.078785 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:12.092204 - buyer0 got a match reply from seller1
+2022-10-19 20:37:12.098843 - buyer0 got a match reply from seller1
+2022-10-19 20:37:12.103636 - buyer0 got a match reply from seller3
+2022-10-19 20:37:12.104120 - buyer0 picked seller3 to purchase boar
+2022-10-19 20:37:12.107995 - buyer0 got a match reply from seller3
+2022-10-19 20:37:12.108862 - buyer0 purchased item boar from seller3
+2022-10-19 20:37:12.108869 - seller3 now has 4 boar item(s) remaining
+2022-10-19 20:37:12.108963 - buyer0 bought boar from seller3
+2022-10-19 20:37:12.108975 - Buyer buyer0 now picked item fish to buy
+2022-10-19 20:37:15.124692 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:15.125979 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:15.127434 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:15.141134 - buyer0 got a match reply from seller2
+2022-10-19 20:37:15.171878 - buyer0 got a match reply from seller2
+2022-10-19 20:37:15.174129 - buyer0 picked seller2 to purchase fish
+2022-10-19 20:37:15.185965 - buyer0 purchased item fish from seller2
+2022-10-19 20:37:15.185979 - seller2 now has 0 fish item(s) remaining
+2022-10-19 20:37:15.186244 - buyer0 got a match reply from seller2
+2022-10-19 20:37:15.186866 - buyer0 bought fish from seller2
+2022-10-19 20:37:15.186885 - Buyer buyer0 now picked item boar to buy
+2022-10-19 20:37:17.189641 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:17.194547 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:17.196919 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:17.210311 - buyer0 got a match reply from seller1
+2022-10-19 20:37:17.223930 - buyer0 got a match reply from seller1
+2022-10-19 20:37:17.226522 - buyer0 got a match reply from seller3
+2022-10-19 20:37:17.227687 - buyer0 picked seller3 to purchase boar
+2022-10-19 20:37:17.229397 - buyer0 got a match reply from seller3
+2022-10-19 20:37:17.230634 - buyer0 purchased item boar from seller3
+2022-10-19 20:37:17.230642 - seller3 now has 3 boar item(s) remaining
+2022-10-19 20:37:17.231156 - buyer0 bought boar from seller3
+2022-10-19 20:37:17.231171 - Buyer buyer0 now picked item boar to buy
+2022-10-19 20:37:18.232296 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:18.234949 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:18.239491 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:18.252830 - buyer0 got a match reply from seller1
+2022-10-19 20:37:18.255012 - buyer0 picked seller1 to purchase boar
+2022-10-19 20:37:18.255685 - buyer0 got a match reply from seller3
+2022-10-19 20:37:18.258210 - buyer0 got a match reply from seller1
+2022-10-19 20:37:18.263512 - buyer0 purchased item boar from seller1
+2022-10-19 20:37:18.263525 - seller1 now has 3 boar item(s) remaining
+2022-10-19 20:37:18.263941 - buyer0 bought boar from seller1
+2022-10-19 20:37:18.263958 - Buyer buyer0 now picked item boar to buy
+2022-10-19 20:37:18.269087 - buyer0 got a match reply from seller3
+2022-10-19 20:37:20.264739 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:20.265890 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:20.267962 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:20.271675 - buyer0 got a match reply from seller1
+2022-10-19 20:37:20.292128 - buyer0 got a match reply from seller1
+2022-10-19 20:37:20.295053 - buyer0 got a match reply from seller3
+2022-10-19 20:37:20.296211 - buyer0 picked seller1 to purchase boar
+2022-10-19 20:37:20.296784 - buyer0 got a match reply from seller3
+2022-10-19 20:37:20.299067 - buyer0 purchased item boar from seller1
+2022-10-19 20:37:20.299074 - seller1 now has 2 boar item(s) remaining
+2022-10-19 20:37:20.299331 - buyer0 bought boar from seller1
+2022-10-19 20:37:20.299345 - Buyer buyer0 now picked item boar to buy
+2022-10-19 20:37:22.303197 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:22.304891 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:22.305668 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:22.324412 - buyer0 got a match reply from seller1
+2022-10-19 20:37:22.331823 - buyer0 got a match reply from seller3
+2022-10-19 20:37:22.340629 - buyer0 got a match reply from seller1
+2022-10-19 20:37:22.342197 - buyer0 purchased item boar from seller1
+2022-10-19 20:37:22.342204 - seller1 now has 1 boar item(s) remaining
+2022-10-19 20:37:22.342528 - buyer0 bought boar from seller1
+2022-10-19 20:37:22.342542 - Buyer buyer0 now picked item salt to buy
+2022-10-19 20:37:22.343714 - buyer0 got a match reply from seller3
+2022-10-19 20:37:23.353193 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:23.356402 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:23.358042 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:23.396202 - buyer0 picked seller3 to purchase salt
+2022-10-19 20:37:23.413564 - buyer0 purchased item boar from seller3
+2022-10-19 20:37:23.413639 - seller3 now has 2 boar item(s) remaining
+2022-10-19 20:37:23.416074 - buyer0 bought salt from seller3
+2022-10-19 20:37:23.416093 - Buyer buyer0 now picked item fish to buy
+2022-10-19 20:37:25.418323 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:25.420105 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:25.425971 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:25.462654 - Buyer buyer0 now picked item salt to buy
+2022-10-19 20:37:25.463369 - buyer0 got a match reply from seller2
+2022-10-19 20:37:25.482279 - buyer0 got a match reply from seller2
+2022-10-19 20:37:25.492087 - buyer0 got a match reply from seller2
+2022-10-19 20:37:26.465109 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:26.466458 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:26.472294 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:26.508860 - buyer0 picked seller2 to purchase salt
+seller2 is now the seller of salt.
+2022-10-19 20:37:26.513136 buyer0 failed to buy salt from seller2
+2022-10-19 20:37:26.513146 - Buyer buyer0 now picked item salt to buy
+2022-10-19 20:37:27.520730 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:27.522311 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:27.523801 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:27.560612 - buyer0 got a match reply from seller2
+2022-10-19 20:37:27.567652 - buyer0 picked seller2 to purchase salt
+2022-10-19 20:37:27.576569 - buyer0 got a match reply from seller2
+2022-10-19 20:37:27.581055 - buyer0 purchased item salt from seller2
+2022-10-19 20:37:27.581067 - seller2 now has 9 salt item(s) remaining
+2022-10-19 20:37:27.581529 - buyer0 bought salt from seller2
+2022-10-19 20:37:27.581550 - Buyer buyer0 now picked item boar to buy
+2022-10-19 20:37:27.584490 - buyer0 got a match reply from seller2
+2022-10-19 20:37:28.583232 - Buyer buyer0 issues lookup to seller1
+2022-10-19 20:37:28.584457 - Buyer buyer0 issues lookup to seller2
+2022-10-19 20:37:28.587721 - Buyer buyer0 issues lookup to seller3
+2022-10-19 20:37:28.609680 - buyer0 got a match reply from seller3
+2022-10-19 20:37:28.612396 - buyer0 picked seller2 to purchase boar
+2022-10-19 20:37:28.627088 - buyer0 got a match reply from seller1
+2022-10-19 20:37:28.628727 - buyer0 purchased item salt from seller2
+2022-10-19 20:37:28.628736 - seller2 now has 8 salt item(s) remaining
+2022-10-19 20:37:28.636822 - buyer0 bought boar from seller2
+2022-10-19 20:37:28.636852 - Buyer buyer0 now picked item salt to buy
+2022-10-19 20:37:28.648440 - buyer0 got a match reply from seller3
+2022-10-19 20:37:28.650028 - buyer0 got a match reply from seller1
+froH|Ñ    À}Ñ                    bus-1/*services/         a   
