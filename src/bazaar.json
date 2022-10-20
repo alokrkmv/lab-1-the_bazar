@@ -1,1 +1,1 @@
-{"buyer0": ["seller1", "seller2", "seller3"], "seller1": ["buyer0", "seller2", "seller3"], "seller2": ["buyer0", "seller1", "seller3"], "seller3": ["buyer0", "seller1", "seller2"]}
+{"buyer0": ["seller1"], "seller1": ["buyer0"]}

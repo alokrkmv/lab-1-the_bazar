@@ -1,3 +1,7 @@
+# nameserver
+# create bazar is connected
+# create bazaar graph getting created
+# checks minimum number of buyrs and sellers
 
 # d = [
 # [0, 1, 0, 0, 0, 0, 0, 0, 0, 0],
