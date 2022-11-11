@@ -20,7 +20,7 @@ class Peer(Process):
         self.output = "tmp/output.txt"
         self.items_count = items_count
         self.item = items[random.randint(0, len(items) - 1)]
-        self.executor = ThreadPoolExecutor(max_workers=5)
+        self.executor = ThreadPoolExecutor(max_workers=20)
         self.host  = host
         self.hop_count = None
         self.neighbors = {}
