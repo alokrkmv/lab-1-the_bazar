@@ -25,11 +25,13 @@ sudo apt-get install python3-tk````
 #### Documentation links
 
 
-1  ![design_doc](https://github.com/alokrkmv/lab-1-the_bazar/blob/main/src/Documentation/Design%20Doc.pdf)
+1 ![problem_statement](https://github.com/alokrkmv/lab-1-the_bazar/blob/main/src/Documentation/Lab%201.pdf)
+
+2  ![design_doc](https://github.com/alokrkmv/lab-1-the_bazar/blob/main/src/Documentation/Design%20Doc.pdf)
   
-2 ![experiment_doc](https://github.com/alokrkmv/lab-1-the_bazar/blob/main/src/Documentation/Experiment%20Doc.pdf)
+3 ![experiment_doc](https://github.com/alokrkmv/lab-1-the_bazar/blob/main/src/Documentation/Experiment%20Doc.pdf)
   
-3 ![testing_doc](https://github.com/alokrkmv/lab-1-the_bazar/blob/main/src/Documentation/Testing%20Doc.pdf)
+4 ![testing_doc](https://github.com/alokrkmv/lab-1-the_bazar/blob/main/src/Documentation/Testing%20Doc.pdf)
 
     
   
